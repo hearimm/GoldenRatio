@@ -21,9 +21,9 @@ const float GOLDEN_RATE = 1.61803398875;
 	// Do any additional setup after loading the view, typically from a nib.
 
     // add iAd
-    self.adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
-    adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
-    [self.view addSubview:adView];
+    //_adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
+    //_adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
+    //[self.view addSubview:adView];
     
     //Background Image
     UIGraphicsBeginImageContext(self.view.frame.size);
@@ -32,6 +32,7 @@ const float GOLDEN_RATE = 1.61803398875;
     UIGraphicsEndImageContext();
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
     
+    _calcFlag = false;
 }
 
 - (void)didReceiveMemoryWarning
@@ -40,24 +41,43 @@ const float GOLDEN_RATE = 1.61803398875;
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)calculate:(id)sender {
-    [self calculate];
+-(void)calculateLowTextChanged{
+    float lowFloat = [_lowText.text floatValue];
+    float highFloat = lowFloat * GOLDEN_RATE;
+    float resultFloat = lowFloat + highFloat;
+    //NSString *lowValue = [NSString stringWithFormat:@"%.3f", lowFloat];
+    NSString *highValue = [NSString stringWithFormat:@"%.3f", highFloat];
+    NSString *resultValue = [NSString stringWithFormat:@"%.3f", resultFloat];
+    
+    //_lowText.text = lowValue;
+    _highText.text = highValue;
+    _resultText.text = resultValue;
+}
+-(void)calculateHighTextChanged{
+    float highFloat = [_highText.text floatValue];
+    float lowFloat = highFloat / GOLDEN_RATE;
+    float resultFloat = highFloat * GOLDEN_RATE;
+    NSString *lowValue = [NSString stringWithFormat:@"%.3f", lowFloat];
+    //NSString *highValue = [NSString stringWithFormat:@"%.3f", highFloat];
+    NSString *resultValue = [NSString stringWithFormat:@"%.3f", resultFloat];
+    
+    _lowText.text = lowValue;
+    //_highText.text = highValue;
+    _resultText.text = resultValue;
+}
+-(void)calculateResultTextChanged{
+    float resultFloat = [_resultText.text floatValue];
+    float highFloat = resultFloat / GOLDEN_RATE;
+    float lowFloat = resultFloat - highFloat;
+    NSString *lowValue = [NSString stringWithFormat:@"%.3f", lowFloat];
+    NSString *highValue = [NSString stringWithFormat:@"%.3f", highFloat];
+    //NSString *resultValue = [NSString stringWithFormat:@"%.3f", resultFloat];
+    
+    _lowText.text = lowValue;
+    _highText.text = highValue;
+    //_resultText.text = resultValue;
 }
 
--(void)calculate{
-    float yFloat = [_inputTxt.text floatValue] * GOLDEN_RATE;
-    float xFloat = [_inputTxt.text floatValue] / GOLDEN_RATE;
-    NSString *yValue = [NSString stringWithFormat:@"%.3f", yFloat];
-    NSString *xValue = [NSString stringWithFormat:@"%.3f", xFloat];
-    _yLabel.text = yValue;
-    _xLabel.text = xValue;
-    _inputLabel.text = _inputTxt.text;
-}
-
-- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
-{
-    [self.view endEditing:YES];
-}
 - (void)bannerViewDidLoadAd:(ADBannerView *)banner
 {
     if (!self.bannerIsVisible)
@@ -82,4 +102,25 @@ const float GOLDEN_RATE = 1.61803398875;
 }
 
 
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+	[self.view endEditing:YES];
+}
+
+- (IBAction)calculate:(id)sender {
+    if(_calcFlag == true){
+        return;
+    }else{
+        _calcFlag = true;
+    }
+    if (sender ==_lowText) {
+        [self calculateLowTextChanged];
+    }else if(sender ==_highText){
+        [self calculateHighTextChanged];
+    }else if(sender ==_resultText){
+        [self calculateResultTextChanged];
+    }else{
+        return;
+    }
+    _calcFlag = false;
+}
 @end

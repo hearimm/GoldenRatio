@@ -10,15 +10,15 @@
 #import <iAd/iAd.h>
 
 @interface goldenSectionViewController : UIViewController <ADBannerViewDelegate>{
-    ADBannerView*adView;
+    //ADBannerView *adview;
 }
 @property (strong, nonatomic) IBOutlet ADBannerView *adView;
 @property BOOL bannerIsVisible;
+@property BOOL calcFlag;
 
-@property (strong, nonatomic) IBOutlet UITextField *inputTxt;
-@property (strong, nonatomic) IBOutlet UILabel *inputLabel;
-@property (strong, nonatomic) IBOutlet UILabel *yLabel;
-@property (strong, nonatomic) IBOutlet UILabel *xLabel;
+@property (strong, nonatomic) IBOutlet UITextField *highText;
+@property (strong, nonatomic) IBOutlet UITextField *lowText;
+@property (strong, nonatomic) IBOutlet UITextField *resultText;
 - (IBAction)calculate:(id)sender;
 
 @end
