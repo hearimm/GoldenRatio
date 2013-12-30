@@ -8,7 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		D00787C41867285700B9F7D9 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00787C31867285700B9F7D9 /* iAd.framework */; };
-		D04B5C7C18673A6200FA04B1 /* bg2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D04B5C7B18673A6200FA04B1 /* bg2.jpg */; };
+		D066A7EB1871A76700F12575 /* bg3.png in Resources */ = {isa = PBXBuildFile; fileRef = D066A7E91871A73000F12575 /* bg3.png */; };
+		D066A7EF1871B20A00F12575 /* bg5.png in Resources */ = {isa = PBXBuildFile; fileRef = D066A7EE1871B20A00F12575 /* bg5.png */; };
+		D066A7F11871BD7200F12575 /* Icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = D066A7F01871BD7200F12575 /* Icon2.png */; };
 		D0E2379E18653BFB00D3A443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E2379D18653BFB00D3A443 /* Foundation.framework */; };
 		D0E237A018653BFB00D3A443 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E2379F18653BFB00D3A443 /* CoreGraphics.framework */; };
 		D0E237A218653BFB00D3A443 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E237A118653BFB00D3A443 /* UIKit.framework */; };
@@ -37,8 +39,10 @@
 
 /* Begin PBXFileReference section */
 		D00787C31867285700B9F7D9 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
-		D04B5C7B18673A6200FA04B1 /* bg2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg2.jpg; path = ../../../Downloads/bg2.jpg; sourceTree = "<group>"; };
-		D0E2379A18653BFB00D3A443 /* GoldenSection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GoldenSection.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D066A7E91871A73000F12575 /* bg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg3.png; path = ../../../Dropbox/icon/bg3.png; sourceTree = "<group>"; };
+		D066A7EE1871B20A00F12575 /* bg5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg5.png; path = ../../../Dropbox/icon/bg5.png; sourceTree = "<group>"; };
+		D066A7F01871BD7200F12575 /* Icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon2.png; path = ../../../Dropbox/icon/Icon2.png; sourceTree = "<group>"; };
+		D0E2379A18653BFB00D3A443 /* Golden Ratio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Golden Ratio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E2379D18653BFB00D3A443 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D0E2379F18653BFB00D3A443 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		D0E237A118653BFB00D3A443 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -97,7 +101,7 @@
 		D0E2379B18653BFB00D3A443 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D0E2379A18653BFB00D3A443 /* GoldenSection.app */,
+				D0E2379A18653BFB00D3A443 /* Golden Ratio.app */,
 				D0E237BB18653BFB00D3A443 /* GoldenSectionTests.xctest */,
 			);
 			name = Products;
@@ -132,7 +136,9 @@
 		D0E237A418653BFB00D3A443 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D04B5C7B18673A6200FA04B1 /* bg2.jpg */,
+				D066A7F01871BD7200F12575 /* Icon2.png */,
+				D066A7EE1871B20A00F12575 /* bg5.png */,
+				D066A7E91871A73000F12575 /* bg3.png */,
 				D0E237A518653BFB00D3A443 /* GoldenSection-Info.plist */,
 				D0E237A618653BFB00D3A443 /* InfoPlist.strings */,
 				D0E237A918653BFB00D3A443 /* main.m */,
@@ -176,7 +182,7 @@
 			);
 			name = GoldenSection;
 			productName = GoldenSection;
-			productReference = D0E2379A18653BFB00D3A443 /* GoldenSection.app */;
+			productReference = D0E2379A18653BFB00D3A443 /* Golden Ratio.app */;
 			productType = "com.apple.product-type.application";
 		};
 		D0E237BA18653BFB00D3A443 /* GoldenSectionTests */ = {
@@ -237,9 +243,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0E237B618653BFB00D3A443 /* Images.xcassets in Resources */,
-				D04B5C7C18673A6200FA04B1 /* bg2.jpg in Resources */,
 				D0E237A818653BFB00D3A443 /* InfoPlist.strings in Resources */,
+				D066A7F11871BD7200F12575 /* Icon2.png in Resources */,
+				D066A7EB1871A76700F12575 /* bg3.png in Resources */,
 				D0E237B118653BFB00D3A443 /* Main.storyboard in Resources */,
+				D066A7EF1871B20A00F12575 /* bg5.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,7 +400,7 @@
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
 				INFOPLIST_FILE = "GoldenSection/GoldenSection-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Golden Ratio";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -407,7 +415,7 @@
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
 				INFOPLIST_FILE = "GoldenSection/GoldenSection-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = "Golden Ratio";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;

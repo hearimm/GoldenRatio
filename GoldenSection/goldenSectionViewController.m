@@ -27,7 +27,7 @@ const float GOLDEN_RATE = 1.61803398875;
     
     //Background Image
     UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"bg2.jpg"] drawInRect:self.view.bounds];
+    [[UIImage imageNamed:@"bg3.png"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
@@ -56,7 +56,7 @@ const float GOLDEN_RATE = 1.61803398875;
 -(void)calculateHighTextChanged{
     float highFloat = [_highText.text floatValue];
     float lowFloat = highFloat / GOLDEN_RATE;
-    float resultFloat = highFloat * GOLDEN_RATE;
+    float resultFloat = highFloat + lowFloat;
     NSString *lowValue = [NSString stringWithFormat:@"%.3f", lowFloat];
     //NSString *highValue = [NSString stringWithFormat:@"%.3f", highFloat];
     NSString *resultValue = [NSString stringWithFormat:@"%.3f", resultFloat];
