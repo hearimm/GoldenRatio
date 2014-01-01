@@ -27,7 +27,7 @@ const float GOLDEN_RATE = 1.61803398875;
     
     //Background Image
     UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"bg3.png"] drawInRect:self.view.bounds];
+    [[UIImage imageNamed:@"bg5.png"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
