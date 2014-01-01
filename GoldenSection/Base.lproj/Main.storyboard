@@ -58,7 +58,7 @@
                                     <action selector="calculate:" destination="vXZ-lx-hvc" eventType="editingChanged" id="HHb-gt-zki"/>
                                 </connections>
                             </textField>
-                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gub-2O-Ddl">
+                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="gub-2O-Ddl">
                                 <rect key="frame" x="0.0" y="430" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <constraints>
@@ -88,6 +88,7 @@
                             <constraint firstItem="WgW-2H-8Qc" firstAttribute="top" secondItem="vUO-I8-Nia" secondAttribute="bottom" constant="8" symbolic="YES" id="2B2-1a-Prj"/>
                             <constraint firstItem="vUO-I8-Nia" firstAttribute="centerX" secondItem="gub-2O-Ddl" secondAttribute="centerX" id="Cuj-wz-8ah"/>
                             <constraint firstItem="qXZ-2N-6ZN" firstAttribute="leading" secondItem="gub-2O-Ddl" secondAttribute="leading" id="J1T-bH-T4G"/>
+                            <constraint firstAttribute="bottom" secondItem="gub-2O-Ddl" secondAttribute="bottom" id="KBL-4E-CnP"/>
                             <constraint firstItem="PWT-Zg-3x3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="31" id="L3r-gS-stN"/>
                             <constraint firstItem="WgW-2H-8Qc" firstAttribute="leading" secondItem="qXZ-2N-6ZN" secondAttribute="trailing" constant="1" id="M1X-Nd-aIp"/>
                             <constraint firstItem="qXZ-2N-6ZN" firstAttribute="top" secondItem="vUO-I8-Nia" secondAttribute="bottom" constant="8" symbolic="YES" id="OKN-3P-CMS"/>
