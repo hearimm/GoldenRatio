@@ -27,7 +27,7 @@ const float GOLDEN_RATE = 1.61803398875;
     
     //Background Image
     UIGraphicsBeginImageContext(self.view.frame.size);
-    [[UIImage imageNamed:@"bg5.png"] drawInRect:self.view.bounds];
+    [[UIImage imageNamed:@"bgBlue.png"] drawInRect:self.view.bounds];
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
@@ -105,14 +105,26 @@ const float GOLDEN_RATE = 1.61803398875;
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	[self.view endEditing:YES];
 }
-
+-(BOOL) initCalcTextField:(UITextField*)sender{
+        if([sender.text isEqual:@""]){
+            
+            NSMutableArray *arrayTextField = [[NSMutableArray alloc ] initWithObjects: _lowText,_highText,_resultText, nil];
+            for (int i=0; i< arrayTextField.count; i++) {
+                [(UITextField *)arrayTextField[i] setText:@""];
+            }
+            return false;
+        }
+    return true;
+}
 - (IBAction)calculate:(id)sender {
-    if(_calcFlag == true){
+    if(_calcFlag == true){ // prevent double calcurate data
         return;
     }else{
         _calcFlag = true;
     }
-    if (sender ==_lowText) {
+    if(![self initCalcTextField:sender]){
+
+    }else if(sender ==_lowText) {
         [self calculateLowTextChanged];
     }else if(sender ==_highText){
         [self calculateHighTextChanged];

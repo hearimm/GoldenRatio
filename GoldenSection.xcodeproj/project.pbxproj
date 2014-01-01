@@ -11,6 +11,9 @@
 		D066A7EB1871A76700F12575 /* bg3.png in Resources */ = {isa = PBXBuildFile; fileRef = D066A7E91871A73000F12575 /* bg3.png */; };
 		D066A7EF1871B20A00F12575 /* bg5.png in Resources */ = {isa = PBXBuildFile; fileRef = D066A7EE1871B20A00F12575 /* bg5.png */; };
 		D066A7F11871BD7200F12575 /* Icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = D066A7F01871BD7200F12575 /* Icon2.png */; };
+		D0BD58E41873E01800449D65 /* bgBlue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0BD58E31873E01800449D65 /* bgBlue.jpg */; };
+		D0BD58E61873F35300449D65 /* bgBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BD58E51873F35300449D65 /* bgBlue.png */; };
+		D0BD58E81873F51100449D65 /* bgBlueIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BD58E71873F51100449D65 /* bgBlueIcon.png */; };
 		D0E2379E18653BFB00D3A443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E2379D18653BFB00D3A443 /* Foundation.framework */; };
 		D0E237A018653BFB00D3A443 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E2379F18653BFB00D3A443 /* CoreGraphics.framework */; };
 		D0E237A218653BFB00D3A443 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E237A118653BFB00D3A443 /* UIKit.framework */; };
@@ -42,6 +45,9 @@
 		D066A7E91871A73000F12575 /* bg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg3.png; path = ../../../Dropbox/icon/bg3.png; sourceTree = "<group>"; };
 		D066A7EE1871B20A00F12575 /* bg5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg5.png; path = ../../../Dropbox/icon/bg5.png; sourceTree = "<group>"; };
 		D066A7F01871BD7200F12575 /* Icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon2.png; path = ../../../Dropbox/icon/Icon2.png; sourceTree = "<group>"; };
+		D0BD58E31873E01800449D65 /* bgBlue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bgBlue.jpg; path = ../../../Downloads/bgBlue.jpg; sourceTree = "<group>"; };
+		D0BD58E51873F35300449D65 /* bgBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgBlue.png; path = ../../../Dropbox/icon/bgBlue.png; sourceTree = "<group>"; };
+		D0BD58E71873F51100449D65 /* bgBlueIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgBlueIcon.png; path = ../../../Dropbox/icon/bgBlueIcon.png; sourceTree = "<group>"; };
 		D0E2379A18653BFB00D3A443 /* Golden Ratio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Golden Ratio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E2379D18653BFB00D3A443 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D0E2379F18653BFB00D3A443 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -136,10 +142,13 @@
 		D0E237A418653BFB00D3A443 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D0BD58E51873F35300449D65 /* bgBlue.png */,
+				D0BD58E31873E01800449D65 /* bgBlue.jpg */,
 				D066A7F01871BD7200F12575 /* Icon2.png */,
 				D066A7EE1871B20A00F12575 /* bg5.png */,
 				D066A7E91871A73000F12575 /* bg3.png */,
 				D0E237A518653BFB00D3A443 /* GoldenSection-Info.plist */,
+				D0BD58E71873F51100449D65 /* bgBlueIcon.png */,
 				D0E237A618653BFB00D3A443 /* InfoPlist.strings */,
 				D0E237A918653BFB00D3A443 /* main.m */,
 				D0E237AB18653BFB00D3A443 /* GoldenSection-Prefix.pch */,
@@ -250,7 +259,10 @@
 				D066A7F11871BD7200F12575 /* Icon2.png in Resources */,
 				D066A7EB1871A76700F12575 /* bg3.png in Resources */,
 				D0E237B118653BFB00D3A443 /* Main.storyboard in Resources */,
+				D0BD58E41873E01800449D65 /* bgBlue.jpg in Resources */,
+				D0BD58E61873F35300449D65 /* bgBlue.png in Resources */,
 				D066A7EF1871B20A00F12575 /* bg5.png in Resources */,
+				D0BD58E81873F51100449D65 /* bgBlueIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +418,12 @@
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
 				INFOPLIST_FILE = "GoldenSection/GoldenSection-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Hyuky/Documents/GoogleAdMobAdsSdkiOS-6.7.0",
+					"/Users/Hyuky/Documents/GoogleAdMobAdsSdkiOS-6.7.0/Add-ons/GoogleAnalyticsServicesiOS_3.02/GoogleAnalytics/Library",
+					"/Users/Hyuky/Documents/GoogleAdMobAdsSdkiOS-6.7.0/Add-ons/GoogleAnalyticsServicesiOS_3.02",
+				);
 				PRODUCT_NAME = "Golden Ratio";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
@@ -423,6 +441,12 @@
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
 				INFOPLIST_FILE = "GoldenSection/GoldenSection-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"/Users/Hyuky/Documents/GoogleAdMobAdsSdkiOS-6.7.0",
+					"/Users/Hyuky/Documents/GoogleAdMobAdsSdkiOS-6.7.0/Add-ons/GoogleAnalyticsServicesiOS_3.02/GoogleAnalytics/Library",
+					"/Users/Hyuky/Documents/GoogleAdMobAdsSdkiOS-6.7.0/Add-ons/GoogleAnalyticsServicesiOS_3.02",
+				);
 				PRODUCT_NAME = "Golden Ratio";
 				PROVISIONING_PROFILE = "";
 				WRAPPER_EXTENSION = app;
