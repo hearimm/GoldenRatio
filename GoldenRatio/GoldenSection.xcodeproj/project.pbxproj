@@ -23,9 +23,10 @@
 		D067F5A31875AA12008F653F /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D067F5A21875AA12008F653F /* AVFoundation.framework */; };
 		D067F5A41875AA18008F653F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E2379F18653BFB00D3A443 /* CoreGraphics.framework */; };
 		D067F5A61875AA1E008F653F /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D067F5A51875AA1E008F653F /* MessageUI.framework */; };
-		D067F5A81875AA26008F653F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D067F5A71875AA26008F653F /* StoreKit.framework */; };
 		D067F5AA1875AA2F008F653F /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D067F5A91875AA2F008F653F /* SystemConfiguration.framework */; };
 		D067F5AD1875C47B008F653F /* libAdapterIAd.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D067F5AC1875C47B008F653F /* libAdapterIAd.a */; };
+		D067F5B11875E43D008F653F /* IconEmbo.png in Resources */ = {isa = PBXBuildFile; fileRef = D067F5B01875E43D008F653F /* IconEmbo.png */; };
+		D067F5B31875E499008F653F /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D067F5B21875E499008F653F /* StoreKit.framework */; };
 		D0E2379E18653BFB00D3A443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E2379D18653BFB00D3A443 /* Foundation.framework */; };
 		D0E237A218653BFB00D3A443 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E237A118653BFB00D3A443 /* UIKit.framework */; };
 		D0E237A818653BFB00D3A443 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0E237A618653BFB00D3A443 /* InfoPlist.strings */; };
@@ -76,10 +77,11 @@
 		D067F5A01875AA0C008F653F /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D067F5A21875AA12008F653F /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D067F5A51875AA1E008F653F /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
-		D067F5A71875AA26008F653F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D067F5A91875AA2F008F653F /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D067F5AB1875AB96008F653F /* iAdmobID.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = iAdmobID.h; sourceTree = "<group>"; };
 		D067F5AC1875C47B008F653F /* libAdapterIAd.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAdapterIAd.a; path = "../../LibAdapterIAd-Nov52013/libAdapterIAd.a"; sourceTree = "<group>"; };
+		D067F5B01875E43D008F653F /* IconEmbo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = IconEmbo.png; path = ../../../../Dropbox/icon/IconEmbo.png; sourceTree = "<group>"; };
+		D067F5B21875E499008F653F /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D0E2379A18653BFB00D3A443 /* Golden Ratio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Golden Ratio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E2379D18653BFB00D3A443 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D0E2379F18653BFB00D3A443 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -108,8 +110,8 @@
 			files = (
 				D067F5AD1875C47B008F653F /* libAdapterIAd.a in Frameworks */,
 				D067F5AA1875AA2F008F653F /* SystemConfiguration.framework in Frameworks */,
-				D067F5A81875AA26008F653F /* StoreKit.framework in Frameworks */,
 				D067F5A61875AA1E008F653F /* MessageUI.framework in Frameworks */,
+				D067F5B31875E499008F653F /* StoreKit.framework in Frameworks */,
 				D067F5A41875AA18008F653F /* CoreGraphics.framework in Frameworks */,
 				D067F5A31875AA12008F653F /* AVFoundation.framework in Frameworks */,
 				D067F5A11875AA0C008F653F /* AudioToolbox.framework in Frameworks */,
@@ -176,9 +178,9 @@
 		D0E2379C18653BFB00D3A443 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D067F5B21875E499008F653F /* StoreKit.framework */,
 				D067F5AC1875C47B008F653F /* libAdapterIAd.a */,
 				D067F5A91875AA2F008F653F /* SystemConfiguration.framework */,
-				D067F5A71875AA26008F653F /* StoreKit.framework */,
 				D067F5A51875AA1E008F653F /* MessageUI.framework */,
 				D067F5A21875AA12008F653F /* AVFoundation.framework */,
 				D067F5A01875AA0C008F653F /* AudioToolbox.framework */,
@@ -215,6 +217,7 @@
 				D067F5821875A8F7008F653F /* bgBlue.jpg */,
 				D067F5831875A8F7008F653F /* Icon2.png */,
 				D067F5841875A8F7008F653F /* Icon1.png */,
+				D067F5B01875E43D008F653F /* IconEmbo.png */,
 				D067F5851875A8F7008F653F /* Icon (1).png */,
 				D067F5861875A8F7008F653F /* bg5.png */,
 				D067F5871875A8F7008F653F /* bg3.png */,
@@ -294,6 +297,11 @@
 				TargetAttributes = {
 					D0E2379918653BFB00D3A443 = {
 						DevelopmentTeam = 553JH6R57K;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					D0E237BA18653BFB00D3A443 = {
 						TestTargetID = D0E2379918653BFB00D3A443;
@@ -325,6 +333,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D067F58E1875A8F7008F653F /* bg5.png in Resources */,
+				D067F5B11875E43D008F653F /* IconEmbo.png in Resources */,
 				D0E237B618653BFB00D3A443 /* Images.xcassets in Resources */,
 				D067F58D1875A8F7008F653F /* Icon (1).png in Resources */,
 				D067F58B1875A8F7008F653F /* Icon2.png in Resources */,
