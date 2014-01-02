@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="4514" systemVersion="13B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <deployment defaultVersion="1536" identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3747"/>
     </dependencies>
     <scenes>
@@ -17,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="1.618" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="cis-fc-oZi">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="1.618" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="cis-fc-oZi">
                                 <rect key="frame" x="182" y="88" width="138" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -27,9 +26,12 @@
                                     <action selector="calculate:" destination="vXZ-lx-hvc" eventType="editingChanged" id="gPL-I2-JQQ"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="SUM" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9of-QH-KJl">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="SUM" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9of-QH-KJl">
                                 <rect key="frame" x="0.0" y="152" width="320" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="aTZ-Qe-7Pi"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="36"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
@@ -37,9 +39,12 @@
                                     <action selector="calculate:" destination="vXZ-lx-hvc" eventType="editingChanged" id="Rx3-wY-1vJ"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="1" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="qXZ-2N-6ZN">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="1" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="qXZ-2N-6ZN">
                                 <rect key="frame" x="0.0" y="88" width="138" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="vV1-ID-Sme"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="36"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
@@ -47,21 +52,29 @@
                                     <action selector="calculate:" destination="vXZ-lx-hvc" eventType="editingChanged" id="HHb-gt-zki"/>
                                 </connections>
                             </textField>
-                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gub-2O-Ddl">
-                                <rect key="frame" x="0.0" y="19" width="320" height="60"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </adBannerView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgW-2H-8Qc">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgW-2H-8Qc">
                                 <rect key="frame" x="139" y="88" width="42" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="42" id="U3b-bl-uGR"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
+                        <constraints>
+                            <constraint firstItem="cis-fc-oZi" firstAttribute="bottom" secondItem="WgW-2H-8Qc" secondAttribute="bottom" id="4EW-qg-PFo"/>
+                            <constraint firstItem="qXZ-2N-6ZN" firstAttribute="top" secondItem="UIa-KI-9k1" secondAttribute="bottom" constant="68" id="FuG-KY-RHD"/>
+                            <constraint firstItem="WgW-2H-8Qc" firstAttribute="bottom" secondItem="qXZ-2N-6ZN" secondAttribute="bottom" id="Poy-K9-Yj8"/>
+                            <constraint firstItem="WgW-2H-8Qc" firstAttribute="leading" secondItem="qXZ-2N-6ZN" secondAttribute="trailing" constant="1" id="SbG-7H-CCC"/>
+                            <constraint firstItem="qXZ-2N-6ZN" firstAttribute="baseline" secondItem="cis-fc-oZi" secondAttribute="baseline" id="URq-RW-w82"/>
+                            <constraint firstItem="9of-QH-KJl" firstAttribute="top" secondItem="UIa-KI-9k1" secondAttribute="bottom" constant="132" id="ffp-QK-i4h"/>
+                            <constraint firstItem="qXZ-2N-6ZN" firstAttribute="top" secondItem="WgW-2H-8Qc" secondAttribute="top" id="jj3-Bl-lLH"/>
+                            <constraint firstItem="cis-fc-oZi" firstAttribute="leading" secondItem="WgW-2H-8Qc" secondAttribute="trailing" constant="1" id="ymt-a7-ZID"/>
+                        </constraints>
                     </view>
                     <connections>
-                        <outlet property="adView" destination="gub-2O-Ddl" id="VLa-RD-zKp"/>
                         <outlet property="highText" destination="cis-fc-oZi" id="eDY-kc-PjD"/>
                         <outlet property="lowText" destination="qXZ-2N-6ZN" id="jaS-9E-UOi"/>
                         <outlet property="resultText" destination="9of-QH-KJl" id="CwF-iE-hSc"/>
