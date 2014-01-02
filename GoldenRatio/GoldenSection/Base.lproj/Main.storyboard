@@ -47,10 +47,6 @@
                                     <action selector="calculate:" destination="vXZ-lx-hvc" eventType="editingChanged" id="HHb-gt-zki"/>
                                 </connections>
                             </textField>
-                            <adBannerView hidden="YES" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="gub-2O-Ddl">
-                                <rect key="frame" x="0.0" y="254" width="320" height="60"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                            </adBannerView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgW-2H-8Qc">
                                 <rect key="frame" x="139" y="88" width="42" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -61,7 +57,6 @@
                         </subviews>
                     </view>
                     <connections>
-                        <outlet property="adView" destination="gub-2O-Ddl" id="VLa-RD-zKp"/>
                         <outlet property="highText" destination="cis-fc-oZi" id="eDY-kc-PjD"/>
                         <outlet property="lowText" destination="qXZ-2N-6ZN" id="jaS-9E-UOi"/>
                         <outlet property="resultText" destination="9of-QH-KJl" id="CwF-iE-hSc"/>

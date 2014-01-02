@@ -8,12 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
+// Import GADBannerView's definition from the SDK
+#import "GADBannerView.h"
+#import "GADAdNetworkExtras.h"
 
-@interface goldenSectionViewController : UIViewController <ADBannerViewDelegate>{
+@interface goldenSectionViewController : UIViewController <GADBannerViewDelegate>{
     //ADBannerView *adview;
+    // Declare one as an instance variable
+    GADBannerView *bannerView_;
 }
-@property (strong, nonatomic) IBOutlet ADBannerView *adView;
-@property BOOL bannerIsVisible;
+//@property (strong, nonatomic) IBOutlet GADBannerView *adMobView;
 @property BOOL calcFlag;
 
 @property (strong, nonatomic) IBOutlet UITextField *highText;
