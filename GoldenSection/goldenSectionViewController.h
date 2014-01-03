@@ -8,9 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
+#import "GADBannerView.h"
 
 @interface goldenSectionViewController : UIViewController <ADBannerViewDelegate>{
     //ADBannerView *adview;
+    GADBannerView *bannerView_;
 }
 @property (strong, nonatomic) IBOutlet ADBannerView *adView;
 @property BOOL bannerIsVisible;

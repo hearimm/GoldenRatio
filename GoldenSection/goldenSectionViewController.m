@@ -12,6 +12,7 @@
 
 @end
 
+#define MY_BANNER_UNIT_ID @"a152c57cf08d063";
 @implementation goldenSectionViewController
 const float GOLDEN_RATE = 1.61803398875;
 
@@ -31,6 +32,24 @@ const float GOLDEN_RATE = 1.61803398875;
     UIImage *image = UIGraphicsGetImageFromCurrentImageContext();
     UIGraphicsEndImageContext();
     self.view.backgroundColor = [UIColor colorWithPatternImage:image];
+    
+    //Admob start
+    // Create a view of the standard size at the top of the screen.
+    // Available AdSize constants are explained in GADAdSize.h.
+    bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+    
+    // Specify the ad unit ID.
+    bannerView_.adUnitID = MY_BANNER_UNIT_ID;
+    
+    // Let the runtime know which UIViewController to restore after taking
+    // the user wherever the ad goes and add it to the view hierarchy.
+    bannerView_.rootViewController = self;
+    [self.view addSubview:bannerView_];
+    
+    // Initiate a generic request to load it with an ad.
+    [bannerView_ loadRequest:[GADRequest request]];
+    
+    //Admob end
     
     _calcFlag = false;
 }
