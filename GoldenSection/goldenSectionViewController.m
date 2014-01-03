@@ -12,7 +12,10 @@
 
 @end
 
-#define MY_BANNER_UNIT_ID @"a152c57cf08d063";
+#define MY_BANNER_UNIT_ID @"a152c57cf08d063"
+#define ADVIEW_X_POINT 0
+#define ADVIEW_Y_POINT 20
+
 @implementation goldenSectionViewController
 const float GOLDEN_RATE = 1.61803398875;
 
@@ -36,7 +39,7 @@ const float GOLDEN_RATE = 1.61803398875;
     //Admob start
     // Create a view of the standard size at the top of the screen.
     // Available AdSize constants are explained in GADAdSize.h.
-    bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner];
+    bannerView_ = [[GADBannerView alloc] initWithAdSize:kGADAdSizeBanner origin:(CGPointMake(ADVIEW_X_POINT, ADVIEW_Y_POINT))];
     
     // Specify the ad unit ID.
     bannerView_.adUnitID = MY_BANNER_UNIT_ID;
