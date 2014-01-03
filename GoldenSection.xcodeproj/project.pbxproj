@@ -17,10 +17,14 @@
 		D0324CD118770F0D005C03F0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0324CD018770F0D005C03F0 /* MessageUI.framework */; };
 		D0324CD318770F12005C03F0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0324CD218770F12005C03F0 /* StoreKit.framework */; };
 		D0324CD518770F18005C03F0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0324CD418770F18005C03F0 /* SystemConfiguration.framework */; };
-		D0324CD818771475005C03F0 /* largeEmboIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0324CD618771475005C03F0 /* largeEmboIcon.png */; };
-		D0324CD918771475005C03F0 /* IconEmbo.png in Resources */ = {isa = PBXBuildFile; fileRef = D0324CD718771475005C03F0 /* IconEmbo.png */; };
-		D0BD58E61873F35300449D65 /* bgBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BD58E51873F35300449D65 /* bgBlue.png */; };
-		D0BD58E81873F51100449D65 /* bgBlueIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BD58E71873F51100449D65 /* bgBlueIcon.png */; };
+		D074373418771EEA00DAC0ED /* IconEmbo-120.png in Resources */ = {isa = PBXBuildFile; fileRef = D074373118771EEA00DAC0ED /* IconEmbo-120.png */; };
+		D074373518771EEA00DAC0ED /* IconEmbo-114.png in Resources */ = {isa = PBXBuildFile; fileRef = D074373218771EEA00DAC0ED /* IconEmbo-114.png */; };
+		D074373618771EEA00DAC0ED /* IconEmbo-57.png in Resources */ = {isa = PBXBuildFile; fileRef = D074373318771EEA00DAC0ED /* IconEmbo-57.png */; };
+		D07437391877204600DAC0ED /* largeEmboIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D07437371877204600DAC0ED /* largeEmboIcon.png */; };
+		D074373A1877204600DAC0ED /* IconEmbo.png in Resources */ = {isa = PBXBuildFile; fileRef = D07437381877204600DAC0ED /* IconEmbo.png */; };
+		D074373E1877235B00DAC0ED /* IconEmbo-80.png in Resources */ = {isa = PBXBuildFile; fileRef = D074373B1877235B00DAC0ED /* IconEmbo-80.png */; };
+		D074373F1877235B00DAC0ED /* IconEmbo-58.png in Resources */ = {isa = PBXBuildFile; fileRef = D074373C1877235B00DAC0ED /* IconEmbo-58.png */; };
+		D07437401877235B00DAC0ED /* IconEmbo-29.png in Resources */ = {isa = PBXBuildFile; fileRef = D074373D1877235B00DAC0ED /* IconEmbo-29.png */; };
 		D0E2379E18653BFB00D3A443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E2379D18653BFB00D3A443 /* Foundation.framework */; };
 		D0E237A218653BFB00D3A443 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E237A118653BFB00D3A443 /* UIKit.framework */; };
 		D0E237A818653BFB00D3A443 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0E237A618653BFB00D3A443 /* InfoPlist.strings */; };
@@ -65,10 +69,14 @@
 		D0324CD018770F0D005C03F0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D0324CD218770F12005C03F0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D0324CD418770F18005C03F0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		D0324CD618771475005C03F0 /* largeEmboIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = largeEmboIcon.png; sourceTree = "<group>"; };
-		D0324CD718771475005C03F0 /* IconEmbo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconEmbo.png; sourceTree = "<group>"; };
-		D0BD58E51873F35300449D65 /* bgBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgBlue.png; path = ../../../Dropbox/icon/bgBlue.png; sourceTree = "<group>"; };
-		D0BD58E71873F51100449D65 /* bgBlueIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgBlueIcon.png; path = ../../../Dropbox/icon/bgBlueIcon.png; sourceTree = "<group>"; };
+		D074373118771EEA00DAC0ED /* IconEmbo-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconEmbo-120.png"; sourceTree = "<group>"; };
+		D074373218771EEA00DAC0ED /* IconEmbo-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconEmbo-114.png"; sourceTree = "<group>"; };
+		D074373318771EEA00DAC0ED /* IconEmbo-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconEmbo-57.png"; sourceTree = "<group>"; };
+		D07437371877204600DAC0ED /* largeEmboIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = largeEmboIcon.png; sourceTree = "<group>"; };
+		D07437381877204600DAC0ED /* IconEmbo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconEmbo.png; sourceTree = "<group>"; };
+		D074373B1877235B00DAC0ED /* IconEmbo-80.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconEmbo-80.png"; sourceTree = "<group>"; };
+		D074373C1877235B00DAC0ED /* IconEmbo-58.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconEmbo-58.png"; sourceTree = "<group>"; };
+		D074373D1877235B00DAC0ED /* IconEmbo-29.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconEmbo-29.png"; sourceTree = "<group>"; };
 		D0E2379A18653BFB00D3A443 /* Golden Ratio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Golden Ratio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E2379D18653BFB00D3A443 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		D0E2379F18653BFB00D3A443 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -195,11 +203,15 @@
 		D0E237A418653BFB00D3A443 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D0BD58E51873F35300449D65 /* bgBlue.png */,
+				D07437371877204600DAC0ED /* largeEmboIcon.png */,
+				D07437381877204600DAC0ED /* IconEmbo.png */,
+				D074373118771EEA00DAC0ED /* IconEmbo-120.png */,
+				D074373218771EEA00DAC0ED /* IconEmbo-114.png */,
+				D074373318771EEA00DAC0ED /* IconEmbo-57.png */,
 				D0E237A518653BFB00D3A443 /* GoldenSection-Info.plist */,
-				D0BD58E71873F51100449D65 /* bgBlueIcon.png */,
-				D0324CD618771475005C03F0 /* largeEmboIcon.png */,
-				D0324CD718771475005C03F0 /* IconEmbo.png */,
+				D074373B1877235B00DAC0ED /* IconEmbo-80.png */,
+				D074373C1877235B00DAC0ED /* IconEmbo-58.png */,
+				D074373D1877235B00DAC0ED /* IconEmbo-29.png */,
 				D0E237A618653BFB00D3A443 /* InfoPlist.strings */,
 				D0E237A918653BFB00D3A443 /* main.m */,
 				D0E237AB18653BFB00D3A443 /* GoldenSection-Prefix.pch */,
@@ -306,13 +318,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0E237B618653BFB00D3A443 /* Images.xcassets in Resources */,
+				D074373A1877204600DAC0ED /* IconEmbo.png in Resources */,
 				D0324CC718770ED0005C03F0 /* README.txt in Resources */,
+				D074373418771EEA00DAC0ED /* IconEmbo-120.png in Resources */,
+				D07437391877204600DAC0ED /* largeEmboIcon.png in Resources */,
 				D0E237A818653BFB00D3A443 /* InfoPlist.strings in Resources */,
-				D0324CD918771475005C03F0 /* IconEmbo.png in Resources */,
+				D074373518771EEA00DAC0ED /* IconEmbo-114.png in Resources */,
+				D074373F1877235B00DAC0ED /* IconEmbo-58.png in Resources */,
+				D074373E1877235B00DAC0ED /* IconEmbo-80.png in Resources */,
+				D074373618771EEA00DAC0ED /* IconEmbo-57.png in Resources */,
+				D07437401877235B00DAC0ED /* IconEmbo-29.png in Resources */,
 				D0E237B118653BFB00D3A443 /* Main.storyboard in Resources */,
-				D0BD58E61873F35300449D65 /* bgBlue.png in Resources */,
-				D0BD58E81873F51100449D65 /* bgBlueIcon.png in Resources */,
-				D0324CD818771475005C03F0 /* largeEmboIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,7 +417,7 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
@@ -465,7 +481,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
 				INFOPLIST_FILE = "GoldenSection/GoldenSection-Info.plist";
@@ -479,7 +495,7 @@
 				);
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "Golden Ratio";
-				PROVISIONING_PROFILE = "7A5487B9-2AE0-4A64-A8ED-638084BCCF54";
+				PROVISIONING_PROFILE = "96C7C0FC-847A-4F48-B4B0-061ECC288402";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -504,7 +520,7 @@
 				);
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "Golden Ratio";
-				PROVISIONING_PROFILE = "7A5487B9-2AE0-4A64-A8ED-638084BCCF54";
+				PROVISIONING_PROFILE = "96C7C0FC-847A-4F48-B4B0-061ECC288402";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
