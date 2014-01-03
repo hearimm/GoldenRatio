@@ -17,9 +17,8 @@
 		D0324CD118770F0D005C03F0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0324CD018770F0D005C03F0 /* MessageUI.framework */; };
 		D0324CD318770F12005C03F0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0324CD218770F12005C03F0 /* StoreKit.framework */; };
 		D0324CD518770F18005C03F0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0324CD418770F18005C03F0 /* SystemConfiguration.framework */; };
-		D066A7EB1871A76700F12575 /* bg3.png in Resources */ = {isa = PBXBuildFile; fileRef = D066A7E91871A73000F12575 /* bg3.png */; };
-		D066A7EF1871B20A00F12575 /* bg5.png in Resources */ = {isa = PBXBuildFile; fileRef = D066A7EE1871B20A00F12575 /* bg5.png */; };
-		D066A7F11871BD7200F12575 /* Icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = D066A7F01871BD7200F12575 /* Icon2.png */; };
+		D0324CD818771475005C03F0 /* largeEmboIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0324CD618771475005C03F0 /* largeEmboIcon.png */; };
+		D0324CD918771475005C03F0 /* IconEmbo.png in Resources */ = {isa = PBXBuildFile; fileRef = D0324CD718771475005C03F0 /* IconEmbo.png */; };
 		D0BD58E61873F35300449D65 /* bgBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BD58E51873F35300449D65 /* bgBlue.png */; };
 		D0BD58E81873F51100449D65 /* bgBlueIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BD58E71873F51100449D65 /* bgBlueIcon.png */; };
 		D0E2379E18653BFB00D3A443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E2379D18653BFB00D3A443 /* Foundation.framework */; };
@@ -66,9 +65,8 @@
 		D0324CD018770F0D005C03F0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D0324CD218770F12005C03F0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D0324CD418770F18005C03F0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
-		D066A7E91871A73000F12575 /* bg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg3.png; path = ../../../Dropbox/icon/bg3.png; sourceTree = "<group>"; };
-		D066A7EE1871B20A00F12575 /* bg5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg5.png; path = ../../../Dropbox/icon/bg5.png; sourceTree = "<group>"; };
-		D066A7F01871BD7200F12575 /* Icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon2.png; path = ../../../Dropbox/icon/Icon2.png; sourceTree = "<group>"; };
+		D0324CD618771475005C03F0 /* largeEmboIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = largeEmboIcon.png; sourceTree = "<group>"; };
+		D0324CD718771475005C03F0 /* IconEmbo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconEmbo.png; sourceTree = "<group>"; };
 		D0BD58E51873F35300449D65 /* bgBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgBlue.png; path = ../../../Dropbox/icon/bgBlue.png; sourceTree = "<group>"; };
 		D0BD58E71873F51100449D65 /* bgBlueIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgBlueIcon.png; path = ../../../Dropbox/icon/bgBlueIcon.png; sourceTree = "<group>"; };
 		D0E2379A18653BFB00D3A443 /* Golden Ratio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Golden Ratio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -198,11 +196,10 @@
 			isa = PBXGroup;
 			children = (
 				D0BD58E51873F35300449D65 /* bgBlue.png */,
-				D066A7F01871BD7200F12575 /* Icon2.png */,
-				D066A7EE1871B20A00F12575 /* bg5.png */,
-				D066A7E91871A73000F12575 /* bg3.png */,
 				D0E237A518653BFB00D3A443 /* GoldenSection-Info.plist */,
 				D0BD58E71873F51100449D65 /* bgBlueIcon.png */,
+				D0324CD618771475005C03F0 /* largeEmboIcon.png */,
+				D0324CD718771475005C03F0 /* IconEmbo.png */,
 				D0E237A618653BFB00D3A443 /* InfoPlist.strings */,
 				D0E237A918653BFB00D3A443 /* main.m */,
 				D0E237AB18653BFB00D3A443 /* GoldenSection-Prefix.pch */,
@@ -311,12 +308,11 @@
 				D0E237B618653BFB00D3A443 /* Images.xcassets in Resources */,
 				D0324CC718770ED0005C03F0 /* README.txt in Resources */,
 				D0E237A818653BFB00D3A443 /* InfoPlist.strings in Resources */,
-				D066A7F11871BD7200F12575 /* Icon2.png in Resources */,
-				D066A7EB1871A76700F12575 /* bg3.png in Resources */,
+				D0324CD918771475005C03F0 /* IconEmbo.png in Resources */,
 				D0E237B118653BFB00D3A443 /* Main.storyboard in Resources */,
 				D0BD58E61873F35300449D65 /* bgBlue.png in Resources */,
-				D066A7EF1871B20A00F12575 /* bg5.png in Resources */,
 				D0BD58E81873F51100449D65 /* bgBlueIcon.png in Resources */,
+				D0324CD818771475005C03F0 /* largeEmboIcon.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -404,7 +400,7 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
 				COPY_PHASE_STRIP = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -444,8 +440,8 @@
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
