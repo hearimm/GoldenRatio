@@ -11,7 +11,6 @@
 		D066A7EB1871A76700F12575 /* bg3.png in Resources */ = {isa = PBXBuildFile; fileRef = D066A7E91871A73000F12575 /* bg3.png */; };
 		D066A7EF1871B20A00F12575 /* bg5.png in Resources */ = {isa = PBXBuildFile; fileRef = D066A7EE1871B20A00F12575 /* bg5.png */; };
 		D066A7F11871BD7200F12575 /* Icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = D066A7F01871BD7200F12575 /* Icon2.png */; };
-		D0BD58E41873E01800449D65 /* bgBlue.jpg in Resources */ = {isa = PBXBuildFile; fileRef = D0BD58E31873E01800449D65 /* bgBlue.jpg */; };
 		D0BD58E61873F35300449D65 /* bgBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BD58E51873F35300449D65 /* bgBlue.png */; };
 		D0BD58E81873F51100449D65 /* bgBlueIcon.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BD58E71873F51100449D65 /* bgBlueIcon.png */; };
 		D0E2379E18653BFB00D3A443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E2379D18653BFB00D3A443 /* Foundation.framework */; };
@@ -45,7 +44,6 @@
 		D066A7E91871A73000F12575 /* bg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg3.png; path = ../../../Dropbox/icon/bg3.png; sourceTree = "<group>"; };
 		D066A7EE1871B20A00F12575 /* bg5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg5.png; path = ../../../Dropbox/icon/bg5.png; sourceTree = "<group>"; };
 		D066A7F01871BD7200F12575 /* Icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon2.png; path = ../../../Dropbox/icon/Icon2.png; sourceTree = "<group>"; };
-		D0BD58E31873E01800449D65 /* bgBlue.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bgBlue.jpg; path = ../../../Downloads/bgBlue.jpg; sourceTree = "<group>"; };
 		D0BD58E51873F35300449D65 /* bgBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgBlue.png; path = ../../../Dropbox/icon/bgBlue.png; sourceTree = "<group>"; };
 		D0BD58E71873F51100449D65 /* bgBlueIcon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgBlueIcon.png; path = ../../../Dropbox/icon/bgBlueIcon.png; sourceTree = "<group>"; };
 		D0E2379A18653BFB00D3A443 /* Golden Ratio.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Golden Ratio.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -143,7 +141,6 @@
 			isa = PBXGroup;
 			children = (
 				D0BD58E51873F35300449D65 /* bgBlue.png */,
-				D0BD58E31873E01800449D65 /* bgBlue.jpg */,
 				D066A7F01871BD7200F12575 /* Icon2.png */,
 				D066A7EE1871B20A00F12575 /* bg5.png */,
 				D066A7E91871A73000F12575 /* bg3.png */,
@@ -259,7 +256,6 @@
 				D066A7F11871BD7200F12575 /* Icon2.png in Resources */,
 				D066A7EB1871A76700F12575 /* bg3.png in Resources */,
 				D0E237B118653BFB00D3A443 /* Main.storyboard in Resources */,
-				D0BD58E41873E01800449D65 /* bgBlue.jpg in Resources */,
 				D0BD58E61873F35300449D65 /* bgBlue.png in Resources */,
 				D066A7EF1871B20A00F12575 /* bg5.png in Resources */,
 				D0BD58E81873F51100449D65 /* bgBlueIcon.png in Resources */,
@@ -412,8 +408,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
 				INFOPLIST_FILE = "GoldenSection/GoldenSection-Info.plist";
@@ -435,8 +431,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
 				INFOPLIST_FILE = "GoldenSection/GoldenSection-Info.plist";
