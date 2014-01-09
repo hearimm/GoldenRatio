@@ -17,6 +17,7 @@
 		D0324CD118770F0D005C03F0 /* MessageUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0324CD018770F0D005C03F0 /* MessageUI.framework */; };
 		D0324CD318770F12005C03F0 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0324CD218770F12005C03F0 /* StoreKit.framework */; };
 		D0324CD518770F18005C03F0 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0324CD418770F18005C03F0 /* SystemConfiguration.framework */; };
+		D04DBA7F187EED2B00A9C2A4 /* bgBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = D04DBA7E187EED2B00A9C2A4 /* bgBlue.png */; };
 		D074373418771EEA00DAC0ED /* IconEmbo-120.png in Resources */ = {isa = PBXBuildFile; fileRef = D074373118771EEA00DAC0ED /* IconEmbo-120.png */; };
 		D074373518771EEA00DAC0ED /* IconEmbo-114.png in Resources */ = {isa = PBXBuildFile; fileRef = D074373218771EEA00DAC0ED /* IconEmbo-114.png */; };
 		D074373618771EEA00DAC0ED /* IconEmbo-57.png in Resources */ = {isa = PBXBuildFile; fileRef = D074373318771EEA00DAC0ED /* IconEmbo-57.png */; };
@@ -69,6 +70,7 @@
 		D0324CD018770F0D005C03F0 /* MessageUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MessageUI.framework; path = System/Library/Frameworks/MessageUI.framework; sourceTree = SDKROOT; };
 		D0324CD218770F12005C03F0 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D0324CD418770F18005C03F0 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
+		D04DBA7E187EED2B00A9C2A4 /* bgBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgBlue.png; sourceTree = "<group>"; };
 		D074373118771EEA00DAC0ED /* IconEmbo-120.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconEmbo-120.png"; sourceTree = "<group>"; };
 		D074373218771EEA00DAC0ED /* IconEmbo-114.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconEmbo-114.png"; sourceTree = "<group>"; };
 		D074373318771EEA00DAC0ED /* IconEmbo-57.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "IconEmbo-57.png"; sourceTree = "<group>"; };
@@ -203,6 +205,7 @@
 		D0E237A418653BFB00D3A443 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				D04DBA7E187EED2B00A9C2A4 /* bgBlue.png */,
 				D07437371877204600DAC0ED /* largeEmboIcon.png */,
 				D07437381877204600DAC0ED /* IconEmbo.png */,
 				D074373118771EEA00DAC0ED /* IconEmbo-120.png */,
@@ -327,6 +330,7 @@
 				D074373F1877235B00DAC0ED /* IconEmbo-58.png in Resources */,
 				D074373E1877235B00DAC0ED /* IconEmbo-80.png in Resources */,
 				D074373618771EEA00DAC0ED /* IconEmbo-57.png in Resources */,
+				D04DBA7F187EED2B00A9C2A4 /* bgBlue.png in Resources */,
 				D07437401877235B00DAC0ED /* IconEmbo-29.png in Resources */,
 				D0E237B118653BFB00D3A443 /* Main.storyboard in Resources */,
 			);
@@ -494,7 +498,7 @@
 				);
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "Golden Ratio";
-				PROVISIONING_PROFILE = "96C7C0FC-847A-4F48-B4B0-061ECC288402";
+				PROVISIONING_PROFILE = "C84847FC-5B0D-46B2-BA50-004677AD18FB";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -519,7 +523,7 @@
 				);
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "Golden Ratio";
-				PROVISIONING_PROFILE = "96C7C0FC-847A-4F48-B4B0-061ECC288402";
+				PROVISIONING_PROFILE = "C84847FC-5B0D-46B2-BA50-004677AD18FB";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
