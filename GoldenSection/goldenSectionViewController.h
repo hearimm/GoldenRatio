@@ -4,7 +4,7 @@
 //
 //  Created by 최 혁 on 2013. 12. 21..
 //  Copyright (c) 2013년 최 혁. All rights reserved.
-//
+//스터디시작
 
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
