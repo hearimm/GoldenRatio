@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D00787C41867285700B9F7D9 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00787C31867285700B9F7D9 /* iAd.framework */; };
+		D057BC8D187617CC00BA0D73 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D057BC8C187617CC00BA0D73 /* StoreKit.framework */; };
 		D066A7EB1871A76700F12575 /* bg3.png in Resources */ = {isa = PBXBuildFile; fileRef = D066A7E91871A73000F12575 /* bg3.png */; };
 		D066A7EF1871B20A00F12575 /* bg5.png in Resources */ = {isa = PBXBuildFile; fileRef = D066A7EE1871B20A00F12575 /* bg5.png */; };
 		D066A7F11871BD7200F12575 /* Icon2.png in Resources */ = {isa = PBXBuildFile; fileRef = D066A7F01871BD7200F12575 /* Icon2.png */; };
@@ -42,6 +43,7 @@
 
 /* Begin PBXFileReference section */
 		D00787C31867285700B9F7D9 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		D057BC8C187617CC00BA0D73 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		D066A7E91871A73000F12575 /* bg3.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg3.png; path = ../../../Dropbox/icon/bg3.png; sourceTree = "<group>"; };
 		D066A7EE1871B20A00F12575 /* bg5.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bg5.png; path = ../../../Dropbox/icon/bg5.png; sourceTree = "<group>"; };
 		D066A7F01871BD7200F12575 /* Icon2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Icon2.png; path = ../../../Dropbox/icon/Icon2.png; sourceTree = "<group>"; };
@@ -76,6 +78,7 @@
 			files = (
 				D00787C41867285700B9F7D9 /* iAd.framework in Frameworks */,
 				D0E237A018653BFB00D3A443 /* CoreGraphics.framework in Frameworks */,
+				D057BC8D187617CC00BA0D73 /* StoreKit.framework in Frameworks */,
 				D0E237A218653BFB00D3A443 /* UIKit.framework in Frameworks */,
 				D0E2379E18653BFB00D3A443 /* Foundation.framework in Frameworks */,
 			);
@@ -116,6 +119,7 @@
 		D0E2379C18653BFB00D3A443 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				D057BC8C187617CC00BA0D73 /* StoreKit.framework */,
 				D00787C31867285700B9F7D9 /* iAd.framework */,
 				D0E2379D18653BFB00D3A443 /* Foundation.framework */,
 				D0E2379F18653BFB00D3A443 /* CoreGraphics.framework */,
@@ -224,6 +228,11 @@
 				TargetAttributes = {
 					D0E2379918653BFB00D3A443 = {
 						DevelopmentTeam = 553JH6R57K;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
 					};
 					D0E237BA18653BFB00D3A443 = {
 						TestTargetID = D0E2379918653BFB00D3A443;
@@ -412,8 +421,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
 				INFOPLIST_FILE = "GoldenSection/GoldenSection-Info.plist";
@@ -425,7 +434,7 @@
 					"/Users/Hyuky/Documents/GoogleAdMobAdsSdkiOS-6.7.0/Add-ons/GoogleAnalyticsServicesiOS_3.02",
 				);
 				PRODUCT_NAME = "Golden Ratio";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "7A5487B9-2AE0-4A64-A8ED-638084BCCF54";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -435,8 +444,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
 				INFOPLIST_FILE = "GoldenSection/GoldenSection-Info.plist";
@@ -448,7 +457,7 @@
 					"/Users/Hyuky/Documents/GoogleAdMobAdsSdkiOS-6.7.0/Add-ons/GoogleAnalyticsServicesiOS_3.02",
 				);
 				PRODUCT_NAME = "Golden Ratio";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "7A5487B9-2AE0-4A64-A8ED-638084BCCF54";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
