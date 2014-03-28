@@ -417,11 +417,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-<<<<<<< HEAD
-				CODE_SIGN_IDENTITY = "";
-=======
+
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
->>>>>>> e891d64470211d60e4dab1e94b6ac5a51ccb8aa0
+
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
@@ -444,11 +442,9 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-<<<<<<< HEAD
-				CODE_SIGN_IDENTITY = "";
-=======
+
 				CODE_SIGN_IDENTITY = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
->>>>>>> e891d64470211d60e4dab1e94b6ac5a51ccb8aa0
+
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
