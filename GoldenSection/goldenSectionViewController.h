@@ -13,7 +13,7 @@
 
 
 @interface goldenSectionViewController : UIViewController{
-    //ADBannerView *adview;
+    ADBannerView *adview;
     GADBannerView *bannerView_;
     GAITrackedViewController *screenName_;
 }
@@ -28,6 +28,5 @@
 @property (strong, nonatomic) IBOutlet UITextField *lowText;
 @property (strong, nonatomic) IBOutlet UITextField *resultText;
 - (IBAction)calculate:(id)sender;
-
 
 @end

@@ -26,9 +26,13 @@ const float GOLDEN_RATE = 1.61803398875;
 	// Do any additional setup after loading the view, typically from a nib.
 
     // add iAd
-    //_adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
-    //_adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
-    //[self.view addSubview:adView];
+    _adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
+    _adView.requiredContentSizeIdentifiers = [NSSet setWithObject:ADBannerContentSizeIdentifierPortrait];
+    _adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
+    CGRect adFrame = _adView.frame;
+    adFrame.origin.y = self.view.frame.size.height-_adView.frame.size.height;
+    _adView.frame = adFrame;
+    [self.view addSubview:_adView];
     
     //Background Image
     UIGraphicsBeginImageContext(self.view.frame.size);
