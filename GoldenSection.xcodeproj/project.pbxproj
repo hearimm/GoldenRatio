@@ -285,7 +285,7 @@
 			isa = PBXProject;
 			attributes = {
 				CLASSPREFIX = goldenSection;
-				LastUpgradeCheck = 0500;
+				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "최 혁";
 				TargetAttributes = {
 					D0E2379918653BFB00D3A443 = {
@@ -406,8 +406,7 @@
 		D0E237CA18653BFB00D3A443 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -438,7 +437,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = NO;
+				ONLY_ACTIVE_ARCH = YES;
 				PROVISIONING_PROFILE = "C84847FC-5B0D-46B2-BA50-004677AD18FB";
 				SDKROOT = iphoneos;
 				VALID_ARCHS = "arm64 armv7 armv7s";
@@ -448,8 +447,7 @@
 		D0E237CB18653BFB00D3A443 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
@@ -502,7 +500,7 @@
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "Golden Ratio";
 				PROVISIONING_PROFILE = "C84847FC-5B0D-46B2-BA50-004677AD18FB";
-				SDKROOT = iphoneos7.0;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -528,7 +526,7 @@
 				"OTHER_LDFLAGS[arch=*]" = "-ObjC";
 				PRODUCT_NAME = "Golden Ratio";
 				PROVISIONING_PROFILE = "C84847FC-5B0D-46B2-BA50-004677AD18FB";
-				SDKROOT = iphoneos7.0;
+				SDKROOT = iphoneos;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -536,7 +534,6 @@
 		D0E237D018653BFB00D3A443 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoldenSection.app/GoldenSection";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
@@ -559,7 +556,6 @@
 		D0E237D118653BFB00D3A443 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoldenSection.app/GoldenSection";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",

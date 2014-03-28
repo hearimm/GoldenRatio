@@ -127,6 +127,7 @@ const float GOLDEN_RATE = 1.61803398875;
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	[self.view endEditing:YES];
 }
+ 
 -(BOOL) initCalcTextField:(UITextField*)sender{
         if([sender.text isEqual:@""]){
             

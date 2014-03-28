@@ -132,11 +132,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoldenSection/goldenSectionViewController.m"
-            timestampString = "410456635.281751"
+            timestampString = "417704517.113836"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "133"
-            endingLineNumber = "133"
+            startingLineNumber = "134"
+            endingLineNumber = "134"
             landmarkName = "-initCalcTextField:"
             landmarkType = "5">
          </BreakpointContent>
@@ -148,11 +148,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoldenSection/goldenSectionViewController.m"
-            timestampString = "410456635.281751"
+            timestampString = "417704517.113836"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "135"
-            endingLineNumber = "135"
+            startingLineNumber = "136"
+            endingLineNumber = "136"
             landmarkName = "-initCalcTextField:"
             landmarkType = "5">
          </BreakpointContent>
