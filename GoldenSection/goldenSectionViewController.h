@@ -9,11 +9,17 @@
 #import <UIKit/UIKit.h>
 #import <iAd/iAd.h>
 #import "GADBannerView.h"
+#import "GAITrackedViewController.h"
 
-@interface goldenSectionViewController : UIViewController <ADBannerViewDelegate>{
+
+@interface goldenSectionViewController : UIViewController{
     //ADBannerView *adview;
     GADBannerView *bannerView_;
+    GAITrackedViewController *screenName_;
 }
+
+
+
 @property (strong, nonatomic) IBOutlet ADBannerView *adView;
 @property BOOL bannerIsVisible;
 @property BOOL calcFlag;

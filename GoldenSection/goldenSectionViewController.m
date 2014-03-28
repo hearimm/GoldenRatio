@@ -7,8 +7,9 @@
 //
 
 #import "goldenSectionViewController.h"
+#import "GAI.h"
 
-@interface goldenSectionViewController ()
+@interface UICollectionViewController ()
 
 @end
 
@@ -55,6 +56,11 @@ const float GOLDEN_RATE = 1.61803398875;
     //Admob end
     
     _calcFlag = false;
+}
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    
+    screenName_ = @"Golden Ratio Main";
 }
 
 - (void)didReceiveMemoryWarning
@@ -122,7 +128,6 @@ const float GOLDEN_RATE = 1.61803398875;
         self.bannerIsVisible = NO;
     }
 }
-
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	[self.view endEditing:YES];
