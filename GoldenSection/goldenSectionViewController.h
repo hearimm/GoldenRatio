@@ -15,7 +15,7 @@
 @interface goldenSectionViewController : UIViewController{
     ADBannerView *adview;
     GADBannerView *bannerView_;
-    GAITrackedViewController *screenName_;
+    GAITrackedViewController *screenName;
 }
 
 

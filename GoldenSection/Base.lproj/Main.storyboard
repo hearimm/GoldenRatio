@@ -16,9 +16,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="1.618" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="cis-fc-oZi">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="1.618" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="cis-fc-oZi">
                                 <rect key="frame" x="182" y="88" width="138" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="C34-LQ-4m0"/>
+                                    <constraint firstAttribute="width" constant="138" id="tTi-hb-SVS"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="36"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
@@ -26,9 +30,13 @@
                                     <action selector="calculate:" destination="vXZ-lx-hvc" eventType="editingChanged" id="gPL-I2-JQQ"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="SUM" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9of-QH-KJl">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="SUM" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9of-QH-KJl">
                                 <rect key="frame" x="0.0" y="152" width="320" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="IxW-sM-zpB"/>
+                                    <constraint firstAttribute="height" constant="68" id="aQK-JH-mFK"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="36"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
@@ -36,9 +44,13 @@
                                     <action selector="calculate:" destination="vXZ-lx-hvc" eventType="editingChanged" id="Rx3-wY-1vJ"/>
                                 </connections>
                             </textField>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="1" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="qXZ-2N-6ZN">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="1" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="qXZ-2N-6ZN">
                                 <rect key="frame" x="0.0" y="88" width="138" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="BAz-s2-Md4"/>
+                                    <constraint firstAttribute="width" constant="138" id="e1X-Yc-X3X"/>
+                                </constraints>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="36"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad" enablesReturnKeyAutomatically="YES"/>
@@ -47,15 +59,19 @@
                                 </connections>
                             </textField>
                             <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="gub-2O-Ddl">
-                                <rect key="frame" x="0.0" y="508" width="320" height="60"/>
+                                <rect key="frame" x="0.0" y="508" width="320" height="50"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="QWn-Uv-OQx"/>
                                 </constraints>
                             </adBannerView>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgW-2H-8Qc">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgW-2H-8Qc">
                                 <rect key="frame" x="139" y="88" width="42" height="68"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="68" id="Gsm-WZ-Z0G"/>
+                                    <constraint firstAttribute="width" constant="42" id="PRg-X0-AeG"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -65,8 +81,12 @@
                             <constraint firstItem="gub-2O-Ddl" firstAttribute="trailing" secondItem="9of-QH-KJl" secondAttribute="trailing" id="7tk-yJ-p4g"/>
                             <constraint firstItem="gub-2O-Ddl" firstAttribute="trailing" secondItem="cis-fc-oZi" secondAttribute="trailing" id="HZ1-Ex-NVu"/>
                             <constraint firstItem="gub-2O-Ddl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Owa-UN-jhZ"/>
+                            <constraint firstItem="WgW-2H-8Qc" firstAttribute="top" secondItem="UIa-KI-9k1" secondAttribute="bottom" constant="68" id="PYo-kz-sif"/>
                             <constraint firstAttribute="trailing" secondItem="gub-2O-Ddl" secondAttribute="trailing" id="ReH-Au-Zih"/>
+                            <constraint firstItem="9of-QH-KJl" firstAttribute="top" secondItem="UIa-KI-9k1" secondAttribute="bottom" constant="132" id="WDv-gN-MCf"/>
                             <constraint firstItem="1Jb-cJ-heO" firstAttribute="top" secondItem="gub-2O-Ddl" secondAttribute="bottom" constant="10" id="ZtG-YA-unt"/>
+                            <constraint firstItem="cis-fc-oZi" firstAttribute="top" secondItem="UIa-KI-9k1" secondAttribute="bottom" constant="68" id="cI4-Po-aJV"/>
+                            <constraint firstItem="qXZ-2N-6ZN" firstAttribute="top" secondItem="UIa-KI-9k1" secondAttribute="bottom" constant="68" id="e7B-mb-qP5"/>
                             <constraint firstItem="gub-2O-Ddl" firstAttribute="leading" secondItem="9of-QH-KJl" secondAttribute="leading" id="mL7-au-kUR"/>
                             <constraint firstItem="gub-2O-Ddl" firstAttribute="leading" secondItem="qXZ-2N-6ZN" secondAttribute="leading" id="n5I-ST-YAR"/>
                             <constraint firstItem="gub-2O-Ddl" firstAttribute="centerX" secondItem="WgW-2H-8Qc" secondAttribute="centerX" id="oyy-Hj-lzU"/>

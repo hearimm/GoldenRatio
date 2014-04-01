@@ -27,8 +27,9 @@ const float GOLDEN_RATE = 1.61803398875;
 
     // add iAd
     _adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
-    _adView.requiredContentSizeIdentifiers = [NSSet setWithObject:ADBannerContentSizeIdentifierPortrait];
-    _adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
+    [_adView setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
+//    _adView.requiredContentSizeIdentifiers = [NSSet setWithObject:ADBannerContentSizeIdentifierPortrait];
+//    _adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
     CGRect adFrame = _adView.frame;
     adFrame.origin.y = self.view.frame.size.height-_adView.frame.size.height;
     _adView.frame = adFrame;
@@ -63,8 +64,7 @@ const float GOLDEN_RATE = 1.61803398875;
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    
-    screenName_ = @"Golden Ratio Main";
+    screenName = @"Golden Ratio Main";
 }
 
 - (void)didReceiveMemoryWarning
