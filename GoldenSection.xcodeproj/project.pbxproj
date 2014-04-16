@@ -8,8 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D00787C41867285700B9F7D9 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00787C31867285700B9F7D9 /* iAd.framework */; };
+		D050EC8818FE05B300CAF308 /* bgBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = D050EC8718FE05B300CAF308 /* bgBlue.png */; };
 		D057BC8D187617CC00BA0D73 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D057BC8C187617CC00BA0D73 /* StoreKit.framework */; };
-		D0BD58E61873F35300449D65 /* bgBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = D0BD58E51873F35300449D65 /* bgBlue.png */; };
 		D0CD6D7D18E5E8CF00F29886 /* AdSupport.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CD6D7C18E5E8CF00F29886 /* AdSupport.framework */; };
 		D0CD6D7F18E5E8D600F29886 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CD6D7E18E5E8D600F29886 /* AudioToolbox.framework */; };
 		D0CD6D8118E5E8DC00F29886 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CD6D8018E5E8DC00F29886 /* AVFoundation.framework */; };
@@ -62,8 +62,8 @@
 
 /* Begin PBXFileReference section */
 		D00787C31867285700B9F7D9 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
+		D050EC8718FE05B300CAF308 /* bgBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgBlue.png; sourceTree = "<group>"; };
 		D057BC8C187617CC00BA0D73 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
-		D0BD58E51873F35300449D65 /* bgBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = bgBlue.png; path = ../../../Dropbox/icon/bgBlue.png; sourceTree = "<group>"; };
 		D0CD6C9118E5E7FA00F29886 /* DFPBannerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPBannerView.h; sourceTree = "<group>"; };
 		D0CD6C9218E5E7FA00F29886 /* DFPExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPExtras.h; sourceTree = "<group>"; };
 		D0CD6C9318E5E7FA00F29886 /* DFPInterstitial.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DFPInterstitial.h; sourceTree = "<group>"; };
@@ -679,7 +679,7 @@
 		D0E237A418653BFB00D3A443 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D0BD58E51873F35300449D65 /* bgBlue.png */,
+				D050EC8718FE05B300CAF308 /* bgBlue.png */,
 				D0E237A518653BFB00D3A443 /* GoldenSection-Info.plist */,
 				D0E237A618653BFB00D3A443 /* InfoPlist.strings */,
 				D0E237A918653BFB00D3A443 /* main.m */,
@@ -819,8 +819,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0E237B618653BFB00D3A443 /* Images.xcassets in Resources */,
+				D050EC8818FE05B300CAF308 /* bgBlue.png in Resources */,
 				D0E237A818653BFB00D3A443 /* InfoPlist.strings in Resources */,
-				D0BD58E61873F35300449D65 /* bgBlue.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -926,6 +926,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "E31E9670-AD61-4E00-A262-AFEF3F5BC356";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -958,6 +959,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				PROVISIONING_PROFILE = "E31E9670-AD61-4E00-A262-AFEF3F5BC356";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -968,8 +970,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
 				INFOPLIST_FILE = "GoldenSection/GoldenSection-Info.plist";
@@ -979,10 +981,10 @@
 					"$(PROJECT_DIR)/GoogleAdMobAdsSdkiOS-6.8.0/Add-ons/GoogleAnalyticsServicesiOS_3.06",
 					"$(PROJECT_DIR)/GoogleAdMobAdsSdkiOS-6.8.0",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "Golden Ratio";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "E31E9670-AD61-4E00-A262-AFEF3F5BC356";
 				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -993,8 +995,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
 				INFOPLIST_FILE = "GoldenSection/GoldenSection-Info.plist";
@@ -1004,10 +1006,10 @@
 					"$(PROJECT_DIR)/GoogleAdMobAdsSdkiOS-6.8.0/Add-ons/GoogleAnalyticsServicesiOS_3.06",
 					"$(PROJECT_DIR)/GoogleAdMobAdsSdkiOS-6.8.0",
 				);
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				OTHER_LDFLAGS = "-ObjC";
 				PRODUCT_NAME = "Golden Ratio";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "E31E9670-AD61-4E00-A262-AFEF3F5BC356";
 				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
 			};
