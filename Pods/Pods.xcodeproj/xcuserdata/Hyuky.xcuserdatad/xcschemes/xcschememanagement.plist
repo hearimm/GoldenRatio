@@ -7,22 +7,30 @@
 		<key>Pods-FlurrySDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
+			<key>orderHint</key>
+			<integer>6</integer>
 		</dict>
 		<key>Pods-Google-AdMob-Ads-SDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
+			<key>orderHint</key>
+			<integer>7</integer>
 		</dict>
 		<key>Pods-GoogleAnalytics-iOS-SDK.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
+			<key>orderHint</key>
+			<integer>8</integer>
 		</dict>
 		<key>Pods.xcscheme</key>
 		<dict>
 			<key>isShown</key>
-			<false/>
+			<true/>
+			<key>orderHint</key>
+			<integer>5</integer>
 		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>

@@ -19,7 +19,6 @@
 		D0CD6D8718E5E90800F29886 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CD6D8618E5E90800F29886 /* SystemConfiguration.framework */; };
 		D0CD6D8918E5EB2600F29886 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CD6D8818E5EB2600F29886 /* CoreData.framework */; };
 		D0CD6FAA18E5F70300F29886 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CD6FA918E5F70300F29886 /* libz.dylib */; };
-		D0CD6FAB18E5F87C00F29886 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CD6ECF18E5F17200F29886 /* libGoogleAdMobAds.a */; };
 		D0CD6FAC18E5F88E00F29886 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CD6FA618E5F37A00F29886 /* libsqlite3.dylib */; };
 		D0E2379E18653BFB00D3A443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E2379D18653BFB00D3A443 /* Foundation.framework */; };
 		D0E237A018653BFB00D3A443 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E2379F18653BFB00D3A443 /* CoreGraphics.framework */; };
@@ -29,7 +28,6 @@
 		D0E237AE18653BFB00D3A443 /* goldenSectionAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E237AD18653BFB00D3A443 /* goldenSectionAppDelegate.m */; };
 		D0E237B418653BFB00D3A443 /* goldenSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E237B318653BFB00D3A443 /* goldenSectionViewController.m */; };
 		D0E237B618653BFB00D3A443 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E237B518653BFB00D3A443 /* Images.xcassets */; };
-		D0E237BD18653BFB00D3A443 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E237BC18653BFB00D3A443 /* XCTest.framework */; };
 		D0E237BE18653BFB00D3A443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E2379D18653BFB00D3A443 /* Foundation.framework */; };
 		D0E237BF18653BFB00D3A443 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E237A118653BFB00D3A443 /* UIKit.framework */; };
 		D0E237C718653BFB00D3A443 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0E237C518653BFB00D3A443 /* InfoPlist.strings */; };
@@ -76,8 +74,6 @@
 		D0CD6D8618E5E90800F29886 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		D0CD6D8818E5EB2600F29886 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		D0CD6D8A18E5EB8000F29886 /* libz.1.2.5.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libz.1.2.5.dylib; path = usr/lib/libz.1.2.5.dylib; sourceTree = SDKROOT; };
-		D0CD6D8C18E5EED900F29886 /* libGoogleAnalyticsServices.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libGoogleAnalyticsServices.a; path = "GoogleAdMobAdsSdkiOS-6.8.0/Add-ons/GoogleAnalyticsServicesiOS_3.06/libGoogleAnalyticsServices.a"; sourceTree = "<group>"; };
-		D0CD6D8D18E5EED900F29886 /* libAdIdAccess.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libAdIdAccess.a; path = "GoogleAdMobAdsSdkiOS-6.8.0/Add-ons/GoogleAnalyticsServicesiOS_3.06/libAdIdAccess.a"; sourceTree = "<group>"; };
 		D0CD6E6118E5F17200F29886 /* DFPBannerView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFPBannerView.h; sourceTree = "<group>"; };
 		D0CD6E6218E5F17200F29886 /* DFPExtras.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFPExtras.h; sourceTree = "<group>"; };
 		D0CD6E6318E5F17200F29886 /* DFPInterstitial.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DFPInterstitial.h; sourceTree = "<group>"; };
@@ -190,7 +186,6 @@
 		D0E237B318653BFB00D3A443 /* goldenSectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = goldenSectionViewController.m; sourceTree = "<group>"; };
 		D0E237B518653BFB00D3A443 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		D0E237BB18653BFB00D3A443 /* GoldenSectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoldenSectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		D0E237BC18653BFB00D3A443 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		D0E237C418653BFB00D3A443 /* GoldenSectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoldenSectionTests-Info.plist"; sourceTree = "<group>"; };
 		D0E237C618653BFB00D3A443 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		D0E237C818653BFB00D3A443 /* GoldenSectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoldenSectionTests.m; sourceTree = "<group>"; };
@@ -202,7 +197,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0CD6FAC18E5F88E00F29886 /* libsqlite3.dylib in Frameworks */,
-				D0CD6FAB18E5F87C00F29886 /* libGoogleAdMobAds.a in Frameworks */,
 				D0CD6FAA18E5F70300F29886 /* libz.dylib in Frameworks */,
 				D0CD6D8718E5E90800F29886 /* SystemConfiguration.framework in Frameworks */,
 				D0CD6D8918E5EB2600F29886 /* CoreData.framework in Frameworks */,
@@ -224,7 +218,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D0E237BD18653BFB00D3A443 /* XCTest.framework in Frameworks */,
 				D0E237BF18653BFB00D3A443 /* UIKit.framework in Frameworks */,
 				D0E237BE18653BFB00D3A443 /* Foundation.framework in Frameworks */,
 			);
@@ -490,8 +483,6 @@
 				D0CD6FA918E5F70300F29886 /* libz.dylib */,
 				D0CD6FA618E5F37A00F29886 /* libsqlite3.dylib */,
 				D0CD6E5E18E5F17200F29886 /* GoogleAdMobAdsSdkiOS-6.8.0 */,
-				D0CD6D8C18E5EED900F29886 /* libGoogleAnalyticsServices.a */,
-				D0CD6D8D18E5EED900F29886 /* libAdIdAccess.a */,
 				D0CD6D8A18E5EB8000F29886 /* libz.1.2.5.dylib */,
 				D0CD6D8818E5EB2600F29886 /* CoreData.framework */,
 				D0CD6D8618E5E90800F29886 /* SystemConfiguration.framework */,
@@ -505,7 +496,6 @@
 				D0E2379D18653BFB00D3A443 /* Foundation.framework */,
 				D0E2379F18653BFB00D3A443 /* CoreGraphics.framework */,
 				D0E237A118653BFB00D3A443 /* UIKit.framework */,
-				D0E237BC18653BFB00D3A443 /* XCTest.framework */,
 				84453473C81747BF897F5A89 /* libPods.a */,
 			);
 			name = Frameworks;
@@ -856,8 +846,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -873,7 +863,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_NAME = "Golden Ratio";
-				PROVISIONING_PROFILE = "E31E9670-AD61-4E00-A262-AFEF3F5BC356";
+				PROVISIONING_PROFILE = "F226D459-5E67-43D2-B099-DBC96C34961C";
 				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -885,8 +875,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
+				CODE_SIGN_IDENTITY = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Distribution: Hyuk Choi (553JH6R57K)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
@@ -902,7 +892,7 @@
 					"$(inherited)",
 				);
 				PRODUCT_NAME = "Golden Ratio";
-				PROVISIONING_PROFILE = "E31E9670-AD61-4E00-A262-AFEF3F5BC356";
+				PROVISIONING_PROFILE = "F226D459-5E67-43D2-B099-DBC96C34961C";
 				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
 			};
