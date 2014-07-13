@@ -1,0 +1,4 @@
+platform :ios, '7.0'
+pod 'Google-AdMob-Ads-SDK'
+pod 'GoogleAnalytics-iOS-SDK'
+pod 'FlurrySDK'

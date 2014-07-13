@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6185.7" systemVersion="14A283o" targetRuntime="iOS.CocoaTouch" variant="6xAndEarlier" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
+        <deployment defaultVersion="1536" identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6181.2"/>
     </dependencies>
     <scenes>
         <!--Golden Section View Controller-->
@@ -13,12 +14,11 @@
                         <viewControllerLayoutGuide type="bottom" id="1Jb-cJ-heO"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="20" width="320" height="460"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="1.618" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="cis-fc-oZi">
-                                <rect key="frame" x="182" y="88" width="138" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="182" y="68" width="138" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="C34-LQ-4m0"/>
                                     <constraint firstAttribute="width" constant="138" id="tTi-hb-SVS"/>
@@ -31,8 +31,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="SUM" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="9of-QH-KJl">
-                                <rect key="frame" x="0.0" y="152" width="320" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="132" width="320" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="320" id="IxW-sM-zpB"/>
                                     <constraint firstAttribute="height" constant="68" id="aQK-JH-mFK"/>
@@ -45,8 +44,7 @@
                                 </connections>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="fill" contentVerticalAlignment="center" placeholder="1" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="qXZ-2N-6ZN">
-                                <rect key="frame" x="0.0" y="88" width="138" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="0.0" y="68" width="138" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="BAz-s2-Md4"/>
                                     <constraint firstAttribute="width" constant="138" id="e1X-Yc-X3X"/>
@@ -58,16 +56,8 @@
                                     <action selector="calculate:" destination="vXZ-lx-hvc" eventType="editingChanged" id="HHb-gt-zki"/>
                                 </connections>
                             </textField>
-                            <adBannerView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="gub-2O-Ddl">
-                                <rect key="frame" x="0.0" y="508" width="320" height="50"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES" flexibleMaxY="YES"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="50" id="QWn-Uv-OQx"/>
-                                </constraints>
-                            </adBannerView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=":" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WgW-2H-8Qc">
-                                <rect key="frame" x="139" y="88" width="42" height="68"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <rect key="frame" x="139" y="68" width="42" height="68"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="68" id="Gsm-WZ-Z0G"/>
                                     <constraint firstAttribute="width" constant="42" id="PRg-X0-AeG"/>
@@ -76,24 +66,29 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <adBannerView appearanceType="aqua" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" translatesAutoresizingMaskIntoConstraints="NO" id="gaO-Pz-hPT">
+                                <rect key="frame" x="0.0" y="410" width="320" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="pFd-In-i1K"/>
+                                </constraints>
+                            </adBannerView>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="gub-2O-Ddl" firstAttribute="trailing" secondItem="9of-QH-KJl" secondAttribute="trailing" id="7tk-yJ-p4g"/>
-                            <constraint firstItem="gub-2O-Ddl" firstAttribute="trailing" secondItem="cis-fc-oZi" secondAttribute="trailing" id="HZ1-Ex-NVu"/>
-                            <constraint firstItem="gub-2O-Ddl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Owa-UN-jhZ"/>
+                            <constraint firstAttribute="bottom" secondItem="gaO-Pz-hPT" secondAttribute="bottom" id="JyU-Bc-dZl"/>
+                            <constraint firstItem="9of-QH-KJl" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Oxe-fz-8SU"/>
                             <constraint firstItem="WgW-2H-8Qc" firstAttribute="top" secondItem="UIa-KI-9k1" secondAttribute="bottom" constant="68" id="PYo-kz-sif"/>
-                            <constraint firstAttribute="trailing" secondItem="gub-2O-Ddl" secondAttribute="trailing" id="ReH-Au-Zih"/>
+                            <constraint firstItem="gaO-Pz-hPT" firstAttribute="leading" secondItem="9of-QH-KJl" secondAttribute="leading" id="Rf8-dj-vH2"/>
+                            <constraint firstAttribute="trailing" secondItem="cis-fc-oZi" secondAttribute="trailing" id="U97-gJ-lNS"/>
                             <constraint firstItem="9of-QH-KJl" firstAttribute="top" secondItem="UIa-KI-9k1" secondAttribute="bottom" constant="132" id="WDv-gN-MCf"/>
-                            <constraint firstItem="1Jb-cJ-heO" firstAttribute="top" secondItem="gub-2O-Ddl" secondAttribute="bottom" constant="10" id="ZtG-YA-unt"/>
+                            <constraint firstItem="gaO-Pz-hPT" firstAttribute="trailing" secondItem="9of-QH-KJl" secondAttribute="trailing" id="auU-Rz-jfK"/>
                             <constraint firstItem="cis-fc-oZi" firstAttribute="top" secondItem="UIa-KI-9k1" secondAttribute="bottom" constant="68" id="cI4-Po-aJV"/>
                             <constraint firstItem="qXZ-2N-6ZN" firstAttribute="top" secondItem="UIa-KI-9k1" secondAttribute="bottom" constant="68" id="e7B-mb-qP5"/>
-                            <constraint firstItem="gub-2O-Ddl" firstAttribute="leading" secondItem="9of-QH-KJl" secondAttribute="leading" id="mL7-au-kUR"/>
-                            <constraint firstItem="gub-2O-Ddl" firstAttribute="leading" secondItem="qXZ-2N-6ZN" secondAttribute="leading" id="n5I-ST-YAR"/>
-                            <constraint firstItem="gub-2O-Ddl" firstAttribute="centerX" secondItem="WgW-2H-8Qc" secondAttribute="centerX" id="oyy-Hj-lzU"/>
+                            <constraint firstItem="qXZ-2N-6ZN" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="eif-N7-roz"/>
+                            <constraint firstAttribute="centerX" secondItem="WgW-2H-8Qc" secondAttribute="centerX" id="j0c-6b-5iR"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="adView" destination="gub-2O-Ddl" id="VLa-RD-zKp"/>
+                        <outlet property="adView" destination="gaO-Pz-hPT" id="jkl-o8-LNo"/>
                         <outlet property="highText" destination="cis-fc-oZi" id="eDY-kc-PjD"/>
                         <outlet property="lowText" destination="qXZ-2N-6ZN" id="jaS-9E-UOi"/>
                         <outlet property="resultText" destination="9of-QH-KJl" id="CwF-iE-hSc"/>
@@ -107,6 +102,9 @@
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
-        <simulatedScreenMetrics key="destination" type="retina4"/>
+        <simulatedScreenMetrics key="destination">
+            <size key="portraitSize" width="320" height="480"/>
+            <size key="landscapeSize" width="480" height="320"/>
+        </simulatedScreenMetrics>
     </simulatedMetricsContainer>
 </document>

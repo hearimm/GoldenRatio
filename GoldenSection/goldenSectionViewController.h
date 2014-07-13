@@ -11,8 +11,7 @@
 #import "GADBannerView.h"
 #import "GAITrackedViewController.h"
 
-
-@interface goldenSectionViewController : UIViewController{
+@interface goldenSectionViewController : GAITrackedViewController{
     ADBannerView *adview;
     GADBannerView *bannerView_;
     GAITrackedViewController *screenName;

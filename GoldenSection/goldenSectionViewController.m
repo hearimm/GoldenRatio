@@ -7,10 +7,10 @@
 //
 
 #import "goldenSectionViewController.h"
+#import "GAITrackedViewController.h"
 #import "GAI.h"
 
 @interface UICollectionViewController ()
-
 @end
 
 #define MY_BANNER_UNIT_ID @"a152c57cf08d063"
@@ -64,7 +64,7 @@ const float GOLDEN_RATE = 1.61803398875;
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
-    screenName = @"Golden Ratio Main";
+    self.screenName = @"Golden Ratio Main";
 }
 
 - (void)didReceiveMemoryWarning
@@ -136,6 +136,7 @@ const float GOLDEN_RATE = 1.61803398875;
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
 	[self.view endEditing:YES];
 }
+
  
 -(BOOL) initCalcTextField:(UITextField*)sender{
         if([sender.text isEqual:@""]){

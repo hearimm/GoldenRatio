@@ -8,6 +8,8 @@
 
 #import "goldenSectionAppDelegate.h"
 #import "GAI.h"
+#import "Flurry.h"
+
 @implementation goldenSectionAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
@@ -24,7 +26,12 @@
     
     // Initialize tracker. Replace with your tracking ID.
     [[GAI sharedInstance] trackerWithTrackingId:@"UA-46812617-1"];
-    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    
+    //note: iOS only allows one crash reporting tool per app; if using another, set to: NO
+    [Flurry setCrashReportingEnabled:YES];
+    
+    // Replace YOUR_API_KEY with the api key in the downloaded package
+    [Flurry startSession:@"C7N56H2TVHV8CTRGGZF4"];
     return YES;
 }
 							
