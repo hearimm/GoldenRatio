@@ -19,6 +19,7 @@
 
 @implementation goldenSectionViewController
 const float GOLDEN_RATE = 1.61803398875;
+const float ratio = 3;
 
 - (void)viewDidLoad
 {

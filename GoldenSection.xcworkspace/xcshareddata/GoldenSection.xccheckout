@@ -5,36 +5,36 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>06FDCE77-0A38-4B80-B172-9B4CAAAB9662</string>
+	<string>23A0F4A8-B2D8-455D-8225-11C55FE5FAD6</string>
 	<key>IDESourceControlProjectName</key>
 	<string>GoldenSection</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>2E7DC730-1BD5-4310-A360-77A3B042680B</key>
-		<string>https://github.com/hearimm/GoldenRatio.git</string>
+		<key>CDE5E8B9-043E-4ED2-8889-89509E4BF2F2</key>
+		<string>https://github.com/KimEunHo/GoldenRatio.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>GoldenSection.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>2E7DC730-1BD5-4310-A360-77A3B042680B</key>
+		<key>CDE5E8B9-043E-4ED2-8889-89509E4BF2F2</key>
 		<string>..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
-	<string>https://github.com/hearimm/GoldenRatio.git</string>
+	<string>https://github.com/KimEunHo/GoldenRatio.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>2E7DC730-1BD5-4310-A360-77A3B042680B</string>
+	<string>CDE5E8B9-043E-4ED2-8889-89509E4BF2F2</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>2E7DC730-1BD5-4310-A360-77A3B042680B</string>
+			<string>CDE5E8B9-043E-4ED2-8889-89509E4BF2F2</string>
 			<key>IDESourceControlWCCName</key>
-			<string>GoldenRatioDesigner</string>
+			<string>GoldenRatio</string>
 		</dict>
 	</array>
 </dict>
