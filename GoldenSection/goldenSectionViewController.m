@@ -19,6 +19,7 @@
 
 @implementation goldenSectionViewController
 const float GOLDEN_RATE = 1.61803398875;
+float ratio = 3;
 
 - (void)viewDidLoad
 {
@@ -75,7 +76,7 @@ const float GOLDEN_RATE = 1.61803398875;
 
 -(void)calculateLowTextChanged{
     float lowFloat = [_lowText.text floatValue];
-    float highFloat = lowFloat * GOLDEN_RATE;
+    float highFloat = lowFloat * ratio;
     float resultFloat = lowFloat + highFloat;
     //NSString *lowValue = [NSString stringWithFormat:@"%.3f", lowFloat];
     NSString *highValue = [NSString stringWithFormat:@"%.3f", highFloat];
@@ -87,7 +88,7 @@ const float GOLDEN_RATE = 1.61803398875;
 }
 -(void)calculateHighTextChanged{
     float highFloat = [_highText.text floatValue];
-    float lowFloat = highFloat / GOLDEN_RATE;
+    float lowFloat = highFloat / ratio;
     float resultFloat = highFloat + lowFloat;
     NSString *lowValue = [NSString stringWithFormat:@"%.3f", lowFloat];
     //NSString *highValue = [NSString stringWithFormat:@"%.3f", highFloat];
@@ -99,8 +100,8 @@ const float GOLDEN_RATE = 1.61803398875;
 }
 -(void)calculateResultTextChanged{
     float resultFloat = [_resultText.text floatValue];
-    float highFloat = resultFloat / GOLDEN_RATE;
-    float lowFloat = resultFloat - highFloat;
+    float lowFloat = resultFloat / (ratio+1);
+    float highFloat = resultFloat - lowFloat;
     NSString *lowValue = [NSString stringWithFormat:@"%.3f", lowFloat];
     NSString *highValue = [NSString stringWithFormat:@"%.3f", highFloat];
     //NSString *resultValue = [NSString stringWithFormat:@"%.3f", resultFloat];
