@@ -434,7 +434,7 @@
 					"/Users/Hyuky/Documents/GoogleAdMobAdsSdkiOS-6.7.0/Add-ons/GoogleAnalyticsServicesiOS_3.02",
 				);
 				PRODUCT_NAME = "Golden Ratio";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "7A5487B9-2AE0-4A64-A8ED-638084BCCF54";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -461,7 +461,7 @@
 					"/Users/Hyuky/Documents/GoogleAdMobAdsSdkiOS-6.7.0/Add-ons/GoogleAnalyticsServicesiOS_3.02",
 				);
 				PRODUCT_NAME = "Golden Ratio";
-				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE = "7A5487B9-2AE0-4A64-A8ED-638084BCCF54";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
