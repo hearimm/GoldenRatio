@@ -11,7 +11,7 @@
 #import "GADBannerView.h"
 #import "GAITrackedViewController.h"
 
-@interface goldenSectionViewController : GAITrackedViewController{
+@interface goldenSectionViewController : GAITrackedViewController<UIPickerViewDataSource,UIPickerViewDelegate>{
     ADBannerView *adview;
     GADBannerView *bannerView_;
     GAITrackedViewController *screenName;
@@ -20,12 +20,18 @@
 
 
 @property (strong, nonatomic) IBOutlet ADBannerView *adView;
+@property (strong, nonatomic) NSArray *ratioTypes;
+@property (strong, nonatomic) NSArray *ratioValues;
 @property BOOL bannerIsVisible;
 @property BOOL calcFlag;
+@property BOOL pickerButtonToggle;
 
 @property (strong, nonatomic) IBOutlet UITextField *highText;
 @property (strong, nonatomic) IBOutlet UITextField *lowText;
 @property (strong, nonatomic) IBOutlet UITextField *resultText;
 - (IBAction)calculate:(id)sender;
+@property (weak, nonatomic) IBOutlet UIPickerView *picker;
+- (IBAction)pressMorePicker:(id)sender;
+@property (strong, nonatomic) IBOutlet UIButton *pickerButton;
 
 @end

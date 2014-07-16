@@ -61,7 +61,12 @@ float ratio = 3;
     
     //Admob end
     
+    //units
+    _ratioTypes =@[@"Golden Ratio",@"1:1",@"1:2",@"1:3"];
+    _ratioValues =@[@1.61803398875f,@1.0f,@2.0f,@3.0f];
+    self.picker.hidden = YES;
     _calcFlag = false;
+    _pickerButtonToggle  = false;
 }
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
@@ -135,7 +140,9 @@ float ratio = 3;
 }
 
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
-	[self.view endEditing:YES];
+	[_highText resignFirstResponder];
+    [_lowText resignFirstResponder];
+    [_resultText resignFirstResponder];
 }
 
  
@@ -169,4 +176,34 @@ float ratio = 3;
     }
     _calcFlag = false;
 }
+- (IBAction)pressMorePicker:(id)sender {
+    _pickerButtonToggle = !_pickerButtonToggle; // bool value toggle
+    if(_pickerButtonToggle){
+        [_pickerButton setTitle:@"Hidden Me!" forState:UIControlStateNormal];
+        self.picker.hidden = NO;
+    }else{
+        [_pickerButton setTitle:@"More?" forState:UIControlStateNormal];
+        self.picker.hidden = YES;
+
+    }
+}
+- (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
+    return 1;
+}
+- (NSInteger)pickerView:(UIPickerView *)pickerView numberOfRowsInComponent:(NSInteger)component{
+    return _ratioTypes.count;
+}
+- (NSString*)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
+    return _ratioTypes[row];
+}
+-(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
+    ratio = [_ratioValues[row] floatValue];
+    _highText.placeholder = [NSString stringWithFormat:@"%.3f",ratio];
+    _calcFlag  = true;
+    [self initCalcTextField:_lowText];
+    [self initCalcTextField:_highText];
+    [self initCalcTextField:_resultText];
+    _calcFlag = false;
+}
+
 @end
