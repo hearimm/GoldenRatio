@@ -27,6 +27,9 @@
     // Initialize tracker. Replace with your tracking ID.
     [[GAI sharedInstance] trackerWithTrackingId:@"UA-46812617-1"];
     
+    id<GAITracker> tracker = [[GAI sharedInstance] defaultTracker];
+    tracker.allowIDFACollection = YES;
+    
     //note: iOS only allows one crash reporting tool per app; if using another, set to: NO
     [Flurry setCrashReportingEnabled:YES];
     

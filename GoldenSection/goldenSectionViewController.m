@@ -19,18 +19,22 @@
 
 @implementation goldenSectionViewController
 const float GOLDEN_RATE = 1.61803398875;
+const float SILVER_RATE = 2.414;
 float ratio = 3;
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    [self pickerDataCreate]; //picker Data Create
+    [_picker selectRow:1 inComponent:0 animated:YES]; //picker default row = 1 Golden Ratio
+
+
 	// Do any additional setup after loading the view, typically from a nib.
 
     // add iAd
     _adView = [[ADBannerView alloc] initWithFrame:CGRectZero];
     [_adView setAutoresizingMask:UIViewAutoresizingFlexibleWidth];
-//    _adView.requiredContentSizeIdentifiers = [NSSet setWithObject:ADBannerContentSizeIdentifierPortrait];
-//    _adView.currentContentSizeIdentifier = ADBannerContentSizeIdentifierPortrait;
+
     CGRect adFrame = _adView.frame;
     adFrame.origin.y = self.view.frame.size.height-_adView.frame.size.height;
     _adView.frame = adFrame;
@@ -61,9 +65,6 @@ float ratio = 3;
     
     //Admob end
     
-    //units
-    _ratioTypes =@[@"Golden Ratio",@"1:1",@"1:2",@"1:3"];
-    _ratioValues =@[@1.61803398875f,@1.0f,@2.0f,@3.0f];
     self.picker.hidden = YES;
     _calcFlag = false;
     _pickerButtonToggle  = false;
@@ -158,6 +159,7 @@ float ratio = 3;
     return true;
 }
 - (IBAction)calculate:(id)sender {
+    _lastInputText = sender;
     if(_calcFlag == true){ // prevent double calcurate data
         return;
     }else{
@@ -171,8 +173,6 @@ float ratio = 3;
         [self calculateHighTextChanged];
     }else if(sender ==_resultText){
         [self calculateResultTextChanged];
-    }else{
-        return;
     }
     _calcFlag = false;
 }
@@ -182,9 +182,8 @@ float ratio = 3;
         [_pickerButton setTitle:@"Hidden Me!" forState:UIControlStateNormal];
         self.picker.hidden = NO;
     }else{
-        [_pickerButton setTitle:@"More?" forState:UIControlStateNormal];
+        [self pickerButtonNameChange];  //dynamic Name change
         self.picker.hidden = YES;
-
     }
 }
 - (NSInteger)numberOfComponentsInPickerView:(UIPickerView *)pickerView{
@@ -199,11 +198,36 @@ float ratio = 3;
 -(void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
     ratio = [_ratioValues[row] floatValue];
     _highText.placeholder = [NSString stringWithFormat:@"%.3f",ratio];
-    _calcFlag  = true;
-    [self initCalcTextField:_lowText];
-    [self initCalcTextField:_highText];
-    [self initCalcTextField:_resultText];
-    _calcFlag = false;
+    [self calculate:_lastInputText];
+    [self.view endEditing:YES];
 }
+-(void)pickerDataCreate{
+    _ratioTypes = [[NSMutableArray alloc] init];
+    _ratioValues = [[NSMutableArray alloc] init];
+    for (int i= 1; i <= 10; i++) {
+        NSString *str = @"1:";
+        NSString *strRatio = [NSString stringWithFormat:@"%d",i];
+        NSString *strResult = [NSString stringWithFormat:@"%@%@",str,strRatio];
 
+        [_ratioTypes addObject:strResult];
+        [_ratioValues addObject:[NSNumber numberWithInt:i]];
+        if(i == 1){
+            NSLog(@"골든레티오 생성");
+            [_ratioTypes addObject:@"Golden Rate"];
+            [_ratioValues addObject:[NSNumber numberWithFloat:GOLDEN_RATE]];
+        }
+        if(i == 2){
+            
+            [_ratioTypes addObject:@"Silver Rate"];
+            [_ratioValues addObject:[NSNumber numberWithFloat:SILVER_RATE]];
+        }
+    }
+//    NSLog(_ratioTypes[0]);
+}
+-(void)pickerButtonNameChange{
+    NSInteger row;
+    row = [_picker selectedRowInComponent:0];
+    NSString *titleName = [_ratioTypes objectAtIndex:row];
+    [_pickerButton setTitle:titleName forState:UIControlStateNormal];
+}
 @end

@@ -1,4 +1,9 @@
-platform :ios, '7.0'
+# Uncomment this line to define a global platform for your project
+# platform :ios, '6.0'
+
+target 'GoldenSection' do
 pod 'Google-AdMob-Ads-SDK'
 pod 'GoogleAnalytics-iOS-SDK'
 pod 'FlurrySDK'
+end
+

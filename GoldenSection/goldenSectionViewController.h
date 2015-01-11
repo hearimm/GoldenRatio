@@ -17,14 +17,14 @@
     GAITrackedViewController *screenName;
 }
 
-
-
 @property (strong, nonatomic) IBOutlet ADBannerView *adView;
-@property (strong, nonatomic) NSArray *ratioTypes;
-@property (strong, nonatomic) NSArray *ratioValues;
+@property (strong, nonatomic) NSMutableArray *ratioTypes;
+@property (strong, nonatomic) NSMutableArray *ratioValues;
 @property BOOL bannerIsVisible;
 @property BOOL calcFlag;
 @property BOOL pickerButtonToggle;
+
+@property (strong, nonatomic) IBOutlet UITextField *lastInputText;
 
 @property (strong, nonatomic) IBOutlet UITextField *highText;
 @property (strong, nonatomic) IBOutlet UITextField *lowText;
@@ -33,5 +33,6 @@
 @property (weak, nonatomic) IBOutlet UIPickerView *picker;
 - (IBAction)pressMorePicker:(id)sender;
 @property (strong, nonatomic) IBOutlet UIButton *pickerButton;
+@property (strong, nonatomic) IBOutletCollection(UITextField) NSArray *arrayText;
 
 @end

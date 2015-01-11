@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B5DEC33F7F42DF873D134919 /* libPods-GoldenSection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 857F5D0D9C434C59B31BAD11 /* libPods-GoldenSection.a */; };
 		D00787C41867285700B9F7D9 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00787C31867285700B9F7D9 /* iAd.framework */; };
 		D03CC68E1972580300C585BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03CC68C1972580300C585BD /* Main.storyboard */; };
 		D050EC8818FE05B300CAF308 /* bgBlue.png in Resources */ = {isa = PBXBuildFile; fileRef = D050EC8718FE05B300CAF308 /* bgBlue.png */; };
@@ -19,7 +20,6 @@
 		D0CD6D8718E5E90800F29886 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CD6D8618E5E90800F29886 /* SystemConfiguration.framework */; };
 		D0CD6D8918E5EB2600F29886 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CD6D8818E5EB2600F29886 /* CoreData.framework */; };
 		D0CD6FAA18E5F70300F29886 /* libz.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CD6FA918E5F70300F29886 /* libz.dylib */; };
-		D0CD6FAB18E5F87C00F29886 /* libGoogleAdMobAds.a in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CD6ECF18E5F17200F29886 /* libGoogleAdMobAds.a */; };
 		D0CD6FAC18E5F88E00F29886 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = D0CD6FA618E5F37A00F29886 /* libsqlite3.dylib */; };
 		D0E2379E18653BFB00D3A443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E2379D18653BFB00D3A443 /* Foundation.framework */; };
 		D0E237A018653BFB00D3A443 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E2379F18653BFB00D3A443 /* CoreGraphics.framework */; };
@@ -29,12 +29,6 @@
 		D0E237AE18653BFB00D3A443 /* goldenSectionAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E237AD18653BFB00D3A443 /* goldenSectionAppDelegate.m */; };
 		D0E237B418653BFB00D3A443 /* goldenSectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E237B318653BFB00D3A443 /* goldenSectionViewController.m */; };
 		D0E237B618653BFB00D3A443 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0E237B518653BFB00D3A443 /* Images.xcassets */; };
-		D0E237BD18653BFB00D3A443 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E237BC18653BFB00D3A443 /* XCTest.framework */; };
-		D0E237BE18653BFB00D3A443 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E2379D18653BFB00D3A443 /* Foundation.framework */; };
-		D0E237BF18653BFB00D3A443 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D0E237A118653BFB00D3A443 /* UIKit.framework */; };
-		D0E237C718653BFB00D3A443 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = D0E237C518653BFB00D3A443 /* InfoPlist.strings */; };
-		D0E237C918653BFB00D3A443 /* GoldenSectionTests.m in Sources */ = {isa = PBXBuildFile; fileRef = D0E237C818653BFB00D3A443 /* GoldenSectionTests.m */; };
-		FAAA9D9534FA470F96D34232 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 84453473C81747BF897F5A89 /* libPods.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,18 +46,13 @@
 			remoteGlobalIDString = 113B6EE3153E1F0B003CAC38;
 			remoteInfo = CuteAnimals;
 		};
-		D0E237C018653BFB00D3A443 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = D0E2379218653BFB00D3A443 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = D0E2379918653BFB00D3A443;
-			remoteInfo = GoldenSection;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1C2627B791DD7896A22062D9 /* Pods-GoldenSection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenSection.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenSection/Pods-GoldenSection.release.xcconfig"; sourceTree = "<group>"; };
+		767BB13B61AAC445AB098F3F /* Pods-GoldenSection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenSection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenSection/Pods-GoldenSection.debug.xcconfig"; sourceTree = "<group>"; };
 		84453473C81747BF897F5A89 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		998A00E2A6D443E9A46564DB /* Pods.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.xcconfig; path = Pods/Pods.xcconfig; sourceTree = "<group>"; };
+		857F5D0D9C434C59B31BAD11 /* libPods-GoldenSection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoldenSection.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D00787C31867285700B9F7D9 /* iAd.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = iAd.framework; path = System/Library/Frameworks/iAd.framework; sourceTree = SDKROOT; };
 		D03CC68D1972580300C585BD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D050EC8718FE05B300CAF308 /* bgBlue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bgBlue.png; sourceTree = "<group>"; };
@@ -189,11 +178,7 @@
 		D0E237B218653BFB00D3A443 /* goldenSectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = goldenSectionViewController.h; sourceTree = "<group>"; };
 		D0E237B318653BFB00D3A443 /* goldenSectionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = goldenSectionViewController.m; sourceTree = "<group>"; };
 		D0E237B518653BFB00D3A443 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		D0E237BB18653BFB00D3A443 /* GoldenSectionTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GoldenSectionTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0E237BC18653BFB00D3A443 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		D0E237C418653BFB00D3A443 /* GoldenSectionTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoldenSectionTests-Info.plist"; sourceTree = "<group>"; };
-		D0E237C618653BFB00D3A443 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		D0E237C818653BFB00D3A443 /* GoldenSectionTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GoldenSectionTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,7 +187,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D0CD6FAC18E5F88E00F29886 /* libsqlite3.dylib in Frameworks */,
-				D0CD6FAB18E5F87C00F29886 /* libGoogleAdMobAds.a in Frameworks */,
 				D0CD6FAA18E5F70300F29886 /* libz.dylib in Frameworks */,
 				D0CD6D8718E5E90800F29886 /* SystemConfiguration.framework in Frameworks */,
 				D0CD6D8918E5EB2600F29886 /* CoreData.framework in Frameworks */,
@@ -216,23 +200,22 @@
 				D0CD6D8118E5E8DC00F29886 /* AVFoundation.framework in Frameworks */,
 				D0CD6D7F18E5E8D600F29886 /* AudioToolbox.framework in Frameworks */,
 				D0CD6D7D18E5E8CF00F29886 /* AdSupport.framework in Frameworks */,
-				FAAA9D9534FA470F96D34232 /* libPods.a in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		D0E237B818653BFB00D3A443 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0E237BD18653BFB00D3A443 /* XCTest.framework in Frameworks */,
-				D0E237BF18653BFB00D3A443 /* UIKit.framework in Frameworks */,
-				D0E237BE18653BFB00D3A443 /* Foundation.framework in Frameworks */,
+				B5DEC33F7F42DF873D134919 /* libPods-GoldenSection.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		AE131B1890E309A6CAC8C3A9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				767BB13B61AAC445AB098F3F /* Pods-GoldenSection.debug.xcconfig */,
+				1C2627B791DD7896A22062D9 /* Pods-GoldenSection.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D0CD6E5E18E5F17200F29886 /* GoogleAdMobAdsSdkiOS-6.8.0 */ = {
 			isa = PBXGroup;
 			children = (
@@ -468,10 +451,9 @@
 			isa = PBXGroup;
 			children = (
 				D0E237A318653BFB00D3A443 /* GoldenSection */,
-				D0E237C218653BFB00D3A443 /* GoldenSectionTests */,
 				D0E2379C18653BFB00D3A443 /* Frameworks */,
 				D0E2379B18653BFB00D3A443 /* Products */,
-				998A00E2A6D443E9A46564DB /* Pods.xcconfig */,
+				AE131B1890E309A6CAC8C3A9 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -479,7 +461,6 @@
 			isa = PBXGroup;
 			children = (
 				D0E2379A18653BFB00D3A443 /* Golden Ratio.app */,
-				D0E237BB18653BFB00D3A443 /* GoldenSectionTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -507,6 +488,7 @@
 				D0E237A118653BFB00D3A443 /* UIKit.framework */,
 				D0E237BC18653BFB00D3A443 /* XCTest.framework */,
 				84453473C81747BF897F5A89 /* libPods.a */,
+				857F5D0D9C434C59B31BAD11 /* libPods-GoldenSection.a */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -537,24 +519,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		D0E237C218653BFB00D3A443 /* GoldenSectionTests */ = {
-			isa = PBXGroup;
-			children = (
-				D0E237C818653BFB00D3A443 /* GoldenSectionTests.m */,
-				D0E237C318653BFB00D3A443 /* Supporting Files */,
-			);
-			path = GoldenSectionTests;
-			sourceTree = "<group>";
-		};
-		D0E237C318653BFB00D3A443 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				D0E237C418653BFB00D3A443 /* GoldenSectionTests-Info.plist */,
-				D0E237C518653BFB00D3A443 /* InfoPlist.strings */,
-			);
-			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -577,24 +541,6 @@
 			productReference = D0E2379A18653BFB00D3A443 /* Golden Ratio.app */;
 			productType = "com.apple.product-type.application";
 		};
-		D0E237BA18653BFB00D3A443 /* GoldenSectionTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = D0E237CF18653BFB00D3A443 /* Build configuration list for PBXNativeTarget "GoldenSectionTests" */;
-			buildPhases = (
-				D0E237B718653BFB00D3A443 /* Sources */,
-				D0E237B818653BFB00D3A443 /* Frameworks */,
-				D0E237B918653BFB00D3A443 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				D0E237C118653BFB00D3A443 /* PBXTargetDependency */,
-			);
-			name = GoldenSectionTests;
-			productName = GoldenSectionTests;
-			productReference = D0E237BB18653BFB00D3A443 /* GoldenSectionTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -612,9 +558,6 @@
 								enabled = 1;
 							};
 						};
-					};
-					D0E237BA18653BFB00D3A443 = {
-						TestTargetID = D0E2379918653BFB00D3A443;
 					};
 				};
 			};
@@ -642,7 +585,6 @@
 			projectRoot = "";
 			targets = (
 				D0E2379918653BFB00D3A443 /* GoldenSection */,
-				D0E237BA18653BFB00D3A443 /* GoldenSectionTests */,
 			);
 		};
 /* End PBXProject section */
@@ -676,14 +618,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0E237B918653BFB00D3A443 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0E237C718653BFB00D3A443 /* InfoPlist.strings in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
@@ -699,7 +633,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Pods-resources.sh\"\n";
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GoldenSection/Pods-GoldenSection-resources.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		F43C3F8BE89E4CE6832FCACB /* Check Pods Manifest.lock */ = {
@@ -730,23 +664,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D0E237B718653BFB00D3A443 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				D0E237C918653BFB00D3A443 /* GoldenSectionTests.m in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
-
-/* Begin PBXTargetDependency section */
-		D0E237C118653BFB00D3A443 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = D0E2379918653BFB00D3A443 /* GoldenSection */;
-			targetProxy = D0E237C018653BFB00D3A443 /* PBXContainerItemProxy */;
-		};
-/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D03CC68C1972580300C585BD /* Main.storyboard */ = {
@@ -761,14 +679,6 @@
 			isa = PBXVariantGroup;
 			children = (
 				D0E237A718653BFB00D3A443 /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
-		D0E237C518653BFB00D3A443 /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D0E237C618653BFB00D3A443 /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -810,7 +720,7 @@
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
-				ONLY_ACTIVE_ARCH = YES;
+				ONLY_ACTIVE_ARCH = NO;
 				PROVISIONING_PROFILE = "E31E9670-AD61-4E00-A262-AFEF3F5BC356";
 				SDKROOT = iphoneos;
 			};
@@ -852,18 +762,14 @@
 		};
 		D0E237CD18653BFB00D3A443 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 998A00E2A6D443E9A46564DB /* Pods.xcconfig */;
+			baseConfigurationReference = 767BB13B61AAC445AB098F3F /* Pods-GoldenSection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers\"",
-					"$(SDKROOT)/usr/include/libz",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "GoldenSection/GoldenSection-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
@@ -871,9 +777,13 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
+					"-framework",
+					AdSupport,
+					"-force_load",
+					"\"${PODS_ROOT}/GoogleAnalytics-iOS-SDK/libAdIdAccess.a\"\n\n",
 				);
 				PRODUCT_NAME = "Golden Ratio";
-				PROVISIONING_PROFILE = "E31E9670-AD61-4E00-A262-AFEF3F5BC356";
+				PROVISIONING_PROFILE = "af3fd604-8ca2-4969-b28f-36ee4051eb78";
 				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
 			};
@@ -881,18 +791,14 @@
 		};
 		D0E237CE18653BFB00D3A443 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 998A00E2A6D443E9A46564DB /* Pods.xcconfig */;
+			baseConfigurationReference = 1C2627B791DD7896A22062D9 /* Pods-GoldenSection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Hyuk Choi (XEKC7398U6)";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
-				HEADER_SEARCH_PATHS = (
-					"\"${PODS_ROOT}/Headers\"",
-					"$(SDKROOT)/usr/include/libz",
-				);
+				HEADER_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = "GoldenSection/GoldenSection-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
 				LIBRARY_SEARCH_PATHS = "$(inherited)";
@@ -900,51 +806,15 @@
 				OTHER_LDFLAGS = (
 					"-ObjC",
 					"$(inherited)",
+					"-framework",
+					AdSupport,
+					"-force_load",
+					"\"${PODS_ROOT}/GoogleAnalytics-iOS-SDK/libAdIdAccess.a\"\n\n",
 				);
 				PRODUCT_NAME = "Golden Ratio";
-				PROVISIONING_PROFILE = "E31E9670-AD61-4E00-A262-AFEF3F5BC356";
+				PROVISIONING_PROFILE = "af3fd604-8ca2-4969-b28f-36ee4051eb78";
 				VERSIONING_SYSTEM = "";
 				WRAPPER_EXTENSION = app;
-			};
-			name = Release;
-		};
-		D0E237D018653BFB00D3A443 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoldenSection.app/GoldenSection";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"DEBUG=1",
-					"$(inherited)",
-				);
-				INFOPLIST_FILE = "GoldenSectionTests/GoldenSectionTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
-			};
-			name = Debug;
-		};
-		D0E237D118653BFB00D3A443 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/GoldenSection.app/GoldenSection";
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(SDKROOT)/Developer/Library/Frameworks",
-					"$(inherited)",
-					"$(DEVELOPER_FRAMEWORKS_DIR)",
-				);
-				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "GoldenSection/GoldenSection-Prefix.pch";
-				INFOPLIST_FILE = "GoldenSectionTests/GoldenSectionTests-Info.plist";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = xctest;
 			};
 			name = Release;
 		};
@@ -965,15 +835,6 @@
 			buildConfigurations = (
 				D0E237CD18653BFB00D3A443 /* Debug */,
 				D0E237CE18653BFB00D3A443 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		D0E237CF18653BFB00D3A443 /* Build configuration list for PBXNativeTarget "GoldenSectionTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				D0E237D018653BFB00D3A443 /* Debug */,
-				D0E237D118653BFB00D3A443 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
