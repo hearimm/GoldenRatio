@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		510AF13D1A62B58B003A6D6E /* IconEmbo.png in Resources */ = {isa = PBXBuildFile; fileRef = 510AF13C1A62B58A003A6D6E /* IconEmbo.png */; };
 		B5DEC33F7F42DF873D134919 /* libPods-GoldenSection.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 857F5D0D9C434C59B31BAD11 /* libPods-GoldenSection.a */; };
 		D00787C41867285700B9F7D9 /* iAd.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D00787C31867285700B9F7D9 /* iAd.framework */; };
 		D03CC68E1972580300C585BD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D03CC68C1972580300C585BD /* Main.storyboard */; };
@@ -50,6 +51,7 @@
 
 /* Begin PBXFileReference section */
 		1C2627B791DD7896A22062D9 /* Pods-GoldenSection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenSection.release.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenSection/Pods-GoldenSection.release.xcconfig"; sourceTree = "<group>"; };
+		510AF13C1A62B58A003A6D6E /* IconEmbo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = IconEmbo.png; sourceTree = "<group>"; };
 		767BB13B61AAC445AB098F3F /* Pods-GoldenSection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GoldenSection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GoldenSection/Pods-GoldenSection.debug.xcconfig"; sourceTree = "<group>"; };
 		84453473C81747BF897F5A89 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		857F5D0D9C434C59B31BAD11 /* libPods-GoldenSection.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GoldenSection.a"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -512,6 +514,7 @@
 			children = (
 				D050EC8718FE05B300CAF308 /* bgBlue.png */,
 				D0E237A518653BFB00D3A443 /* GoldenSection-Info.plist */,
+				510AF13C1A62B58A003A6D6E /* IconEmbo.png */,
 				D0E237A618653BFB00D3A443 /* InfoPlist.strings */,
 				D0E237A918653BFB00D3A443 /* main.m */,
 				D0E237AB18653BFB00D3A443 /* GoldenSection-Prefix.pch */,
@@ -613,6 +616,7 @@
 			files = (
 				D0E237B618653BFB00D3A443 /* Images.xcassets in Resources */,
 				D050EC8818FE05B300CAF308 /* bgBlue.png in Resources */,
+				510AF13D1A62B58B003A6D6E /* IconEmbo.png in Resources */,
 				D0E237A818653BFB00D3A443 /* InfoPlist.strings in Resources */,
 				D03CC68E1972580300C585BD /* Main.storyboard in Resources */,
 			);
