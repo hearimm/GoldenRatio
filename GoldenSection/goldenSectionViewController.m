@@ -19,8 +19,8 @@
 
 @implementation goldenSectionViewController
 const float GOLDEN_RATE = 1.61803398875;
-const float SILVER_RATE = 2.414;
-float ratio = 3;
+const float SILVER_RATE = 2.4142135623;
+float ratio = GOLDEN_RATE;
 
 - (void)viewDidLoad
 {
@@ -201,6 +201,8 @@ float ratio = 3;
     [self calculate:_lastInputText];
     [self.view endEditing:YES];
 }
+
+
 -(void)pickerDataCreate{
     _ratioTypes = [[NSMutableArray alloc] init];
     _ratioValues = [[NSMutableArray alloc] init];
@@ -212,12 +214,10 @@ float ratio = 3;
         [_ratioTypes addObject:strResult];
         [_ratioValues addObject:[NSNumber numberWithInt:i]];
         if(i == 1){
-            NSLog(@"골든레티오 생성");
             [_ratioTypes addObject:@"Golden Rate"];
             [_ratioValues addObject:[NSNumber numberWithFloat:GOLDEN_RATE]];
         }
         if(i == 2){
-            
             [_ratioTypes addObject:@"Silver Rate"];
             [_ratioValues addObject:[NSNumber numberWithFloat:SILVER_RATE]];
         }
