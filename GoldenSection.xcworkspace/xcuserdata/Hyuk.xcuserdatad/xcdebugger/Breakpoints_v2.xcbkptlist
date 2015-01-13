@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "GoldenSection/goldenSectionViewController.m"
-            timestampString = "442673911.250479"
+            timestampString = "442852335.681802"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "208"
-            endingLineNumber = "208"
+            startingLineNumber = "209"
+            endingLineNumber = "209"
             landmarkName = "-pickerDataCreate"
             landmarkType = "5">
          </BreakpointContent>

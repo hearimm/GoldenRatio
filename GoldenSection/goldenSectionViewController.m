@@ -180,6 +180,7 @@ float ratio = GOLDEN_RATE;
     _pickerButtonToggle = !_pickerButtonToggle; // bool value toggle
     if(_pickerButtonToggle){
         [_pickerButton setTitle:@"Hidden Me!" forState:UIControlStateNormal];
+        [self.view endEditing:YES];
         self.picker.hidden = NO;
     }else{
         [self pickerButtonNameChange];  //dynamic Name change
